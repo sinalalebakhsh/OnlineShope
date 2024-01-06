@@ -1,6 +1,6 @@
 #!/bin/bash
 git add .
-git commit -m " 💠 121-Django/Practice_01-30/Practice-13 Online Shop Image-04 Django All-Auth
+git commit -m " 💠 121-Django/Practice_01-30/Practice-13 Online Shop Image-05 Environment Variables
 1- write in a directory Terminal 
 2- Create private/public repository in your account github
 3- in Terminal -> echo '# OnlineShope' >> README.md
@@ -189,6 +189,17 @@ Every package you add means you are adding a vulnerability to your site.
 141- in broswer go to admin panel -> http://127.0.0.1:8000/admin/
 142- in broswer go to users -> http://127.0.0.1:8000/admin/accounts/customuser/
 143- Check account Username , You created in step 133 , Should be like this
+144- Install this in another Terminal (Docker should be running right now) 
+145- add previous step in requirements.txt by this command in Terminal 
+146- write this in config/settings.py after imports -> from environs import Env
+147- install again for pipenv, write in Terminal -> pipenv install -r requirements.txt
+148- write these in config/settings.py, after step 146
+149- Cut the values of SECRET_KEY without these signs '' like this
+150- change value of SECRET_KEY like this -> SECRET_KEY = env('DJANGO_SECRET_KEY')
+151- create new dependency in docker-compose.yml file after ports:...
+152- create new environment in docker-compose.yml file after depends_on:...
+153- If in values of SECRET_KEY was a $ sign repeat $ again after it like this -> django-insecure-b764$$#(&o4o((cvy!z^nsseq5@erq#e^0%5r5a(%c24*f^*sde
+154- Rebuild Server -> docker-compose up --build
 
 "
 git push -u origin main 
