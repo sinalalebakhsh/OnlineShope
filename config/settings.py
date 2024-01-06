@@ -156,6 +156,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # For All Auth App Settings
 ACCOUNT_SESSION_REMEMBER = True
+ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = False
 SITE_ID = 1
 AUTHENTICATION_BACKENDS = [
     # Needed to login by username in Django admin, regardless of `allauth`
@@ -165,7 +166,6 @@ AUTHENTICATION_BACKENDS = [
     'allauth.account.auth_backends.AuthenticationBackend',
 ]
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = False
 
 
 
