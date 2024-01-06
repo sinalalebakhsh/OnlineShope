@@ -200,6 +200,11 @@ Every package you add means you are adding a vulnerability to your site.
 152- create new environment in docker-compose.yml file after depends_on:...
 153- If in values of SECRET_KEY was a $ sign repeat $ again after it like this -> django-insecure-b764$$#(&o4o((cvy!z^nsseq5@erq#e^0%5r5a(%c24*f^*sde
 154- Rebuild Server -> docker-compose up --build
+155- write new environment Variable in docker-compose after DJANGO_SECRET_KEY=...
+156- change value of DEBUG in config/settings.py like this
+157- change value of ALLOWED_HOSTS list in config/settings.py like this
+158- Restart Server in Termial
+159- Check this link in broswer
 
 "
 git push -u origin main 
