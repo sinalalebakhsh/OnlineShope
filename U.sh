@@ -1,6 +1,6 @@
 #!/bin/bash
 git add .
-git commit -m " 💠 121-Django/Practice_01-30/Practice-13 Online Shop Image-06 Real Sending Email System
+git commit -m " 💠 121-Django/Practice_01-30/Practice-13 Online Shop Image-07 Email Customization
 1- write in a directory Terminal 
 2- Create private/public repository in your account github
 3- in Terminal -> echo '# OnlineShope' >> README.md
@@ -217,6 +217,17 @@ Every package you add means you are adding a vulnerability to your site.
 168- Copy that temporary fake email
 169- create a new user in this link
 170- change in config/settings.py after EMAIL_BACKEND
+171- Create this directory in templates/account -> email
+172- Create this file in templates/account -> email_confirmation_subject.txt
+173- Create this file in templates/account/email -> email_confirmation_message.txt
+174- Write these codes inside of templates/account/email/email_confirmation_subject.txt
+175- Write these codes inside of templates/account/email/email_confirmation_message.txt
+176- Create  new user again in this link in browser
+177- Check Terminal , should got Email content like this
+178- Click on this link from previous step
+179- Create this file in tempaltes/account -> email_confirm.html
+180- Write these inside tempaltes/account/email_confirm.html
+181- Click on this link again, should be changed
 
 "
 git push -u origin main 
