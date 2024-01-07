@@ -1,6 +1,6 @@
 #!/bin/bash
 git add .
-git commit -m " 💠 121-Django/Practice_01-30/Practice-13 Online Shop Image-08 common links in Pages
+git commit -m " 💠 121-Django/Practice_01-30/Practice-13 Online Shop Image-09 debug common links in pages
 1- write in a directory Terminal 
 2- Create private/public repository in your account github
 3- in Terminal -> echo '# OnlineShope' >> README.md
@@ -235,6 +235,7 @@ Every package you add means you are adding a vulnerability to your site.
 186- Check these to links should jump to ligin/signup page
 187- Change aboutus.html like this
 188- Change _base.html like this
+189- Change this _base.html like this
 
 "
 git push -u origin main 
