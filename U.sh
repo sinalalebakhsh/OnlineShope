@@ -1,6 +1,6 @@
 #!/bin/bash
 git add .
-git commit -m " 💠 121-Django/Practice_01-30/Practice-13 Online Shop Image-07 Email Customization
+git commit -m " 💠 121-Django/Practice_01-30/Practice-13 Online Shop Image-08 common links in Pages
 1- write in a directory Terminal 
 2- Create private/public repository in your account github
 3- in Terminal -> echo '# OnlineShope' >> README.md
@@ -228,6 +228,13 @@ Every package you add means you are adding a vulnerability to your site.
 179- Create this file in tempaltes/account -> email_confirm.html
 180- Write these inside tempaltes/account/email_confirm.html
 181- Click on this link again, should be changed
+182- Write these inside of _base.html
+183- Change home.html like this
+184- First logout from this link
+185- Check this link in broswer, should added these two link = login and signup
+186- Check these to links should jump to ligin/signup page
+187- Change aboutus.html like this
+188- Change _base.html like this
 
 "
 git push -u origin main 
