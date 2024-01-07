@@ -1,6 +1,6 @@
 #!/bin/bash
 git add .
-git commit -m " 💠 121-Django/Practice_01-30/Practice-13 Online Shop Image-05 Environment Variables
+git commit -m " 💠 121-Django/Practice_01-30/Practice-13 Online Shop Image-06 Real Sending Email System
 1- write in a directory Terminal 
 2- Create private/public repository in your account github
 3- in Terminal -> echo '# OnlineShope' >> README.md
@@ -205,6 +205,18 @@ Every package you add means you are adding a vulnerability to your site.
 157- change value of ALLOWED_HOSTS list in config/settings.py like this
 158- Restart Server in Termial
 159- Check this link in broswer
+160- Create new Gmail for this tutorial(Check list)
+161- go in that Gmail account
+162- go in manage my account
+163- find in security
+⛔⛔⛔⛔⛔⛔⛔⛔⛔⛔⛔⛔
+164- find 'Less secure app access' -> Turn On Access
+165- write in config/settings.py after EMAIL_BACKEND
+166- Restart Server
+167- go in this link 
+168- Copy that temporary fake email
+169- create a new user in this link
+170- change in config/settings.py after EMAIL_BACKEND
 
 "
 git push -u origin main 
