@@ -1,6 +1,6 @@
 #!/bin/bash
 git add .
-git commit -m " 💠 121-Django/Practice_01-30/Practice-13 Online Shop Image-09 debug common links in pages
+git commit -m " 💠 121-Django/Practice_01-30/Practice-13 Online Shop Image-10 create new app for products
 1- write in a directory Terminal 
 2- Create private/public repository in your account github
 3- in Terminal -> echo '# OnlineShope' >> README.md
@@ -236,6 +236,38 @@ Every package you add means you are adding a vulnerability to your site.
 187- Change aboutus.html like this
 188- Change _base.html like this
 189- Change this _base.html like this
+190- Write in Terminal -> docker-compose exec web python manage.py startapp products
+191- Install products app in config/settings.py > INSTALLED_APPS list
+192- Go into products/apps.py, Copy ProductsConfig function
+193- change Install app address in config/settings.py > INSTALLED_APPS list. You can also write like this.
+194- Create new model in products/models.py
+195- Write in another Termial -> docker-compose exec web python manage.py makemigrations products
+196- Check this address products/migrations/0001_initial.py
+197- Write in another Termial -> docker-compose exec web python manage.py migrate
+198- import this into products/views.py
+199- Create new class into products/views.py
+200- Create product_list.html file in products/templates/products/product_list.html -> templates/products/product_list.html
+201- Write these into templates/products/product_list.html
+202- Create urls.py in products directory(App) -> urls.py
+203- import these into products/urls.py
+204- Creat new urlpatterns list inside products/urls.py
+205- Create new path inside config/urls.py after paths in urlpatterns list -> ... path('products/', include('products.urls')),
+206- Restart server in Termial -> docker-compose up
+207- Check this link , It must be implemented correctly. 
+208- add these codes in content block inside of product_list.html
+209- import into products/admin.py 
+210- Create new class in products/admin.py
+211- Restart server in Termial -> docker-compose up
+212- Create new product in this link -> http://127.0.0.1:8000/admin/products/product/add/
+213- go to products/models.py add the magic method end of Product class like this
+214- check this link should pretty shows title products you created in previous steps -> http://127.0.0.1:8000/admin/products/product/
+215- add list_display in products/admin.py in class of ProductAdmin
+216- check this link should pretty shows title products you created in previous steps -> http://127.0.0.1:8000/admin/products/product/
+217- Check this link should be shows all products you created before -> http://127.0.0.1:8000/products/
+218- change products/views.py/ProductListView class like this
+219- Restart Server -> docker-compose up
+220- deactive a product in this link -> http://127.0.0.1:8000/admin/products/product/
+221- go back in this link the deactivate product most be don't shows. -> http://127.0.0.1:8000/products/
 
 "
 git push -u origin main 

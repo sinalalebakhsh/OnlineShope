@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     # Custom Created
     'accounts',
     'pages',
+    'products.apps.ProductsConfig',
 ]
 
 MIDDLEWARE = [
