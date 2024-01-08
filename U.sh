@@ -268,6 +268,7 @@ Every package you add means you are adding a vulnerability to your site.
 219- Restart Server -> docker-compose up
 220- deactive a product in this link -> http://127.0.0.1:8000/admin/products/product/
 221- go back in this link the deactivate product most be don't shows. -> http://127.0.0.1:8000/products/
+222- Create new class for detail view of products in products/views.py
 
 "
 git push -u origin main 
