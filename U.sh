@@ -269,6 +269,17 @@ Every package you add means you are adding a vulnerability to your site.
 220- deactive a product in this link -> http://127.0.0.1:8000/admin/products/product/
 221- go back in this link the deactivate product most be don't shows. -> http://127.0.0.1:8000/products/
 222- Create new class for detail view of products in products/views.py
+223- Create this file in products/templates/products/product_detail.html -> product_detail.html
+224- write inside of product_detail.html these codes
+225- Change this line in product_list.html
+226- import ProductDetailView in products/urls.py -> from .views import ProductDetailView
+227- Create new path in products/urls.py -> path('<int:pk>/', ProductDetailView.as_view(), name='product_detail'),
+228- Check this link, Output, it must be implemented correctly: -> http://127.0.0.1:8000/products/1/
+229- import into products/models.py -> from django.shortcuts import reverse
+230- add end of Product class into products/models.py
+231- add this to product_list.html -> <a href='{{ product.get_absolute_url }}'>
+232- Restart Server in Terminal -> docker-compose up
+233- Check this link and Click on a product you created, it should will be jump to detail view itself. -> http://127.0.0.1:8000/products/
 
 "
 git push -u origin main 

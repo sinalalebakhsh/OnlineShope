@@ -5,9 +5,10 @@
         Product List is here ...
     </h1>
     {% for product in products %}
-        <h1>
-            {{ product.title }}
-        </h1>
+        <a href="{{ product.get_absolute_url }}">
+            <h1>{{ product.title }}</h1>
+        </a>
+
     {% endfor %}
     
 {% endblock %}
