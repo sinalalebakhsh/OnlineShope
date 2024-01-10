@@ -280,6 +280,11 @@ Every package you add means you are adding a vulnerability to your site.
 231- add this to product_list.html -> <a href='{{ product.get_absolute_url }}'>
 232- Restart Server in Terminal -> docker-compose up
 233- Check this link and Click on a product you created, it should will be jump to detail view itself. -> http://127.0.0.1:8000/products/
+234- import this in config/settings.py -> import os
+235- Add this after STATIC_URL in config/settings.py
+236- Create new directory in current directory project -> static
+237- Create new directory in static/css
+238- Copy and Paste your CSS files in static/css directory
 
 "
 git push -u origin main 

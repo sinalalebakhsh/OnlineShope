@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 from environs import Env
+import os
+
 
 # For Environment Variables
 env = Env()
@@ -142,6 +144,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+# Apart from looking for the static directory inside each application, 
+# look for the static directory inside the main project.
+STATIC_DIRS = [os.path.join(BASE_DIR, 'static'),  ]
+
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
