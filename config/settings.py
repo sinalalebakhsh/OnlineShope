@@ -147,7 +147,7 @@ STATIC_URL = 'static/'
 
 # Apart from looking for the static directory inside each application, 
 # look for the static directory inside the main project.
-STATIC_DIRS = [os.path.join(BASE_DIR, 'static'),  ]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),  ]
 
 
 

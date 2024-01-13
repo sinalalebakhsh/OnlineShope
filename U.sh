@@ -285,21 +285,15 @@ Every package you add means you are adding a vulnerability to your site.
 236- Create new directory in current directory project -> static
 237- Create new directory in static/css
 238- Copy and Paste your CSS files in static/css directory
+239- add these in HEAD tag of _base.html
+240- Add this to First line of _base.html -> {% load static %}
+241- Add these to product_list.html
+242- Go to this link, broswer content must be messy -> http://127.0.0.1:8000/products/
+243- Change this line in _base.html
 
 "
 git push -u origin main 
 
 # with ScreenShot for showing demo png file
-
-
-
-
-
-
-
-
-
-
-
 
 
