@@ -292,6 +292,7 @@ Every package you add means you are adding a vulnerability to your site.
 243- Change this line in _base.html
 245- Rebuild Server
 246- Add Images to static directory
+247- Change this in _base.html
 
 "
 git push -u origin main 
