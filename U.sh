@@ -290,6 +290,8 @@ Every package you add means you are adding a vulnerability to your site.
 241- Add these to product_list.html
 242- Go to this link, broswer content must be messy -> http://127.0.0.1:8000/products/
 243- Change this line in _base.html
+245- Rebuild Server
+246- Add Images to static directory
 
 "
 git push -u origin main 
