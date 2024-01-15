@@ -294,6 +294,12 @@ Every package you add means you are adding a vulnerability to your site.
 246- Add Images to static directory
 247- Change this in _base.html
 248- Paste Your Fonts directory in static directory
+249- Restart Server
+250- add these into _base.html before {% block content %}
+251- content of product_list.html
+252- content of _base.html for now
+253- Copy/Paste js files in static directory
+
 
 "
 git push -u origin main 

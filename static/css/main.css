@@ -305,13 +305,13 @@ textarea,
 }
 
 .header-toolbar__btn i {
-  font-size: 23px;
+  font-size: px;
 }
 
 .header-toolbar__btn.mini-cart-btn .mini-cart-count {
   right: -13px;
   top: -13px;
-  font-size: 14px;
+  font-size: px;
   text-align: center;
   width: 22px;
   height: 22px;
