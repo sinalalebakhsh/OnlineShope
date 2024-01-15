@@ -299,7 +299,9 @@ Every package you add means you are adding a vulnerability to your site.
 251- content of product_list.html
 252- content of _base.html for now
 253- Copy/Paste js files in static directory
-
+254- Change this line in product_list.html
+255- Check your products. It must be implemented correctly.
+256- Change this line in product_list.html
 
 "
 git push -u origin main 
