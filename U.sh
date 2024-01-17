@@ -302,6 +302,7 @@ Every package you add means you are adding a vulnerability to your site.
 254- Change this line in product_list.html
 255- Check your products. It must be implemented correctly.
 256- Change this line in product_list.html
+257- Change this in product_detail.html
 
 "
 git push -u origin main 
