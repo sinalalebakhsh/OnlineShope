@@ -8,3 +8,9 @@ class ProductAdmin(admin.ModelAdmin):
 
 
 
+
+
+
+
+
+

@@ -304,6 +304,9 @@ Every package you add means you are adding a vulnerability to your site.
 256- Change this line in product_list.html
 257- Change this in product_detail.html
 258- Check this link -> http://127.0.0.1:8000/products/1/
+259- import this into products/models.py
+260- Create new model for comments this into products/models.py
+261- make sure server is running + write in another Terminal
 
 "
 git push -u origin main 
