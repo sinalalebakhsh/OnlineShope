@@ -1,6 +1,6 @@
 #!/bin/bash
 git add .
-git commit -m " 💠 121-Django/Practice_01-30/Practice-13 Online Shop Image-12 create new app for products
+git commit -m " 💠 121-Django/Practice_01-30/Practice-13 Online Shop Image-13 about frontend 
 1- write in a directory Terminal 
 2- Create private/public repository in your account github
 3- in Terminal -> echo '# OnlineShope' >> README.md
