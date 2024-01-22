@@ -4554,7 +4554,7 @@ textarea,
   .main-navigation .mainmenu__item.menu-item-has-children>ul.megamenu>li a {
     margin: 10px 0;
     display: inline-block;
-    font-size: 13px;
+    font-size: 25px;
     line-height: 20px;
   }
 }

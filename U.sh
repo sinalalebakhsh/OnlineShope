@@ -307,6 +307,12 @@ Every package you add means you are adding a vulnerability to your site.
 259- import this into products/models.py
 260- Create new model for comments this into products/models.py
 261- make sure server is running + write in another Terminal
+262- make sure server is running + write in another Terminal
+263- import into products/admin.py
+264- add this into products/admin.py
+265- Restart Server
+266- Check browser links
+267- Create two comments for two different products
 
 "
 git push -u origin main 
