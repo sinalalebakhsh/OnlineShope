@@ -2,13 +2,15 @@
 
 {% block page_title %}Detail: {{ product.title }}{% endblock %}
 
+{% load static %}
+
 {% block content %}
 
 <!-- Main Wrapper Start -->
     <div class="wrapper">
      
         <!-- Breadcrumb area Start -->
-        <div class="breadcrumb-area bg-color ptb--90" data-bg-color="#f6f6f6">
+        <div class="breadcrumb-area bg-color ptb--90" data-bg-color="#a6dedb">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -37,8 +39,8 @@
                                 </p>
                                 <div class="my-5 py-5 product-price-wrapper mb--25">
                                     <span class="money text-success">{{ product.price }} تومان</span>
-                                    <span class="price-separator">-</span>
-                                    <span class="money old-price text-danger">۲۱۰,۰۰۰ تومان</span>
+                                    <!-- <span class="price-separator">-</span>
+                                    <span class="money old-price text-danger">۲۱۰,۰۰۰ تومان</span> -->
                                 </div>
                                 <div class="product-action d-flex align-items-sm-center align-content-center mb--30">
                                     <div class="quantity-wrapper d-flex justify-content-start">
@@ -111,31 +113,33 @@
                                         <div class="product-reviews">
                                             <h3 class="review__title">۱ نظر برای لباس تابستانی</h3>
                                             <ul class="review__list">
-                                                <li class="review__item">
-                                                    <div class="review__container">
-                                                        <div class="review__text">
-                                                            <div class="d-flex flex-sm-row flex-row">
-                                                                <img src="assets/img/others/comment-1.jpg" alt="Review Avatar" class="review__avatar">
-                                                                <div>
-                                                                    <div class="review__meta">
-                                                                        <strong class="review__author px-4">علی علوی</strong>
-                                                                        <span class="review__dash">-</span>
-                                                                        <span class="review__published-date">۱۲ مرداد ۱۴۰۱</span>
-                                                                    </div>
-                                                                    <div class="product-rating">
-                                                                        <div class="m-0 star-rating star-five">
-                                                                            <span>Rated <strong class="rating">5.00</strong> out of 5</span>
+                                                {% for comment in product.comments.all %}
+                                                    <li class="review__item">
+                                                        <div class="review__container">
+                                                            <div class="review__text">
+                                                                <div class="d-flex flex-sm-row flex-row">
+                                                                    <img src="{% static 'img/others/comment-1.jpg' %}" alt="Review Avatar" class="review__avatar p-3">
+                                                                    <div>
+                                                                        <div class="review__meta">
+                                                                            <strong class="review__author px-4">{{ comment.author.username }}</strong>
+                                                                            <span class="review__dash">-</span>
+                                                                            <span class="review__published-date">{{ comment.date_time_created }}</span>
+                                                                        </div>
+                                                                        <div class="product-rating">
+                                                                            <div class="m-0 star-rating star-five">
+                                                                                <span>Rated <strong class="rating">{{ product.star }}</strong> out of 5</span>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
+                                                                <p class="review__description text-right px-4">
+                                                                    {{ comment.body }}
+                                                                </p>
                                                             </div>
-                                                            <p class="review__description text-right px-4">
-                                                                از خرید خودم راضی هستم. واقعا خیلی خوب بسته بندی شده بود و همینطور سر زمان رسید. واقعا نسبت به قیمت خیلی می ارزه.
-                                                            </p>
                                                         </div>
-                                                    </div>
-                                                    
-                                                </li>
+                                                        
+                                                    </li>
+                                                {% endfor %}
                                             </ul>
                                             <div class="review-form-wrapper">
                                                 <div class="row">

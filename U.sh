@@ -313,6 +313,11 @@ Every package you add means you are adding a vulnerability to your site.
 265- Restart Server
 266- Check browser links
 267- Create two comments for two different products
+268- Create new class in products/admin.py
+269- add this in 'class ProductAdmin' > products/admin.py 
+270- Change product_detail.html on line number 113 : <ul class="review__list">
+271- add {% load static %} to product_detail.html
+272- Go in product details in this link shuold be shows detail of comments
 
 "
 git push -u origin main 
