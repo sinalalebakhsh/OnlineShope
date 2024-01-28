@@ -3,6 +3,7 @@
 {% block page_title %}Detail: {{ product.title }}{% endblock %}
 
 {% load static %}
+{% load crispy_forms_tags %}
 
 {% block content %}
 
@@ -146,7 +147,12 @@
                                                     <div class="border-top py-5 w-100"></div>
                                                     <div class="col-lg-8 m-auto">
                                                         <span class="reply-title pull-right">نظر خود را بنویسید</span>
-                                                        <br>
+                                                        <form action="" method="POST">
+                                                            {% csrf_token %}
+                                                            {{ comment_form|crispy }}
+                                                            <input type="submit" value="ارسال">
+                                                        </form>
+                                                        <!-- <br>
                                                         <form action="#" class="form text-right">
                                                             <div class="form-notes mb--20">
                                                                 <p class="my-3"><span class="required">*</span>ایمیل شما برای دیگران نشان داده نمیشود.</p>
@@ -170,7 +176,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                        </form>
+                                                        </form> -->
                                                     </div>
                                                 </div>
                                             </div>
