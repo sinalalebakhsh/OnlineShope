@@ -326,7 +326,7 @@ Every package you add means you are adding a vulnerability to your site.
 278- change these bunch of code in product_detail.html
 279- Check this link 
 280- add these bunch of codes in product_detail.html
-281-Check this link 
+281- Check this link 
 282- check in settings.py crispy_forms should be installed
 283- write after {% load static %} in product_detail.html
 284- change this in product_detail.html
@@ -337,6 +337,20 @@ Every package you add means you are adding a vulnerability to your site.
 289- Create new path in products/urls.py
 290- add this into product_detail.html
 291- create a comment + should get an error
+292- add  this in class of Comment into products/models.py
+293- add new comment and check it
+294- change this line in product_detail.html
+295- Create new Custom Manager in products/models.py with a new class
+296- add this in class of Comment into products/models.py
+297- Create new directory in products
+298- Create new file in products/templatetags
+299- Create new file in products/templatetags
+300- add into in products/templatetags/comment_tags.py
+301- create new decorator into products/templatetags/comment_tags.py
+302- add this in first product_detail.html
+303- this in first product_detail.html
+304- check this link
+305- Restart server , + (sure you have deactive bunch of comments and in this shouldn't be shows)
 
 "
 git push -u origin main 
