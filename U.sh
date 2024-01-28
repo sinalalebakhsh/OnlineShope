@@ -330,6 +330,13 @@ Every package you add means you are adding a vulnerability to your site.
 282- check in settings.py crispy_forms should be installed
 283- write after {% load static %} in product_detail.html
 284- change this in product_detail.html
+285- Check this link 
+286- import in products/views.py
+287- Create new class in products/views.py
+288- import in products/urls.py
+289- Create new path in products/urls.py
+290- add this into product_detail.html
+291- create a comment + should get an error
 
 "
 git push -u origin main 
