@@ -318,6 +318,11 @@ Every package you add means you are adding a vulnerability to your site.
 270- Change product_detail.html on line number 113 : <ul class="review__list">
 271- add {% load static %} to product_detail.html
 272- Go in product details in this link shuold be shows detail of comments
+273- Create new file in products directory
+274- import these in products/forms.py
+275- Create new class in products/forms.py
+276- add these bunch of codes into ProductDetailView class in products/views.py
+277- import into first of products/views.py
 
 "
 git push -u origin main 
