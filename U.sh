@@ -370,6 +370,8 @@ Every package you add means you are adding a vulnerability to your site.
 322- Write in Terminal + venv have to activated -> django-admin compilemessages
 323- Press Ctrl + P and write
 324- go and sure created this file in this address -> products/locale/fa/LC_MESSAGES/django.mo
+325- Restart Server and run again
+326- go this link should be Traslated your selections
 
 "
 git push -u origin main 
