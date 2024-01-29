@@ -5,7 +5,7 @@ from .models import Comment
 
 
 
-class CommentsInLine(admin.TabularInline):
+class CommentsInLine(admin.StackedInline):
     model = Comment
     fields = ['author', 'body', 'star', 'active', ]
 

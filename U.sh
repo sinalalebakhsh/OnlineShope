@@ -351,6 +351,8 @@ Every package you add means you are adding a vulnerability to your site.
 303- this in first product_detail.html
 304- check this link
 305- Restart server , + (sure you have deactive bunch of comments and in this shouldn't be shows)
+306- this in first product_detail.html
+307- change this into products/admin.py -> about StackedInline
 
 "
 git push -u origin main 
