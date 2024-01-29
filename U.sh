@@ -354,6 +354,22 @@ Every package you add means you are adding a vulnerability to your site.
 306- this in first product_detail.html
 307- change this into products/admin.py -> about StackedInline
 308- add this in products/models.py -> about Verbose Name
+309- Change this into config/settings.py
+310- Add this into config/settings.py -> USE_L10N = True # Localization
+311- Change this line in product_detail.html -> <span class='reply-title pull-right'>{% translate 'Write your comment' %}</span>
+312- add this in first of product_detail.html -> {% load i18n %}
+313- Change this line in product_detail.html -> <input type='submit' value='{% translate 'Submit' }'>
+314-  Change this line in product_detail.html -> <span>{% translate 'Product Description' %}</span>
+315- Create new file in products directory -> locale
+316- Write in Terminal -> cd products
+317- Write in Terminal + venv have to activated -> django-admin makemessages -l fa
+318- Write in Terminal (You need to install msguniq on your system. For a debian system, you can likely do this with sudo apt-get install gettext.)
+319- Write in Terminal + venv have to activated (again) --->> django-admin makemessages -l fa
+320- Go to this address -> products/locale/fa/LC_MESSAGES/django.po
+321- change this line in products/locale/fa/LC_MESSAGES/django.po
+322- Write in Terminal + venv have to activated -> django-admin compilemessages
+323- Press Ctrl + P and write
+324- go and sure created this file in this address -> products/locale/fa/LC_MESSAGES/django.mo
 
 "
 git push -u origin main 
