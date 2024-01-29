@@ -372,6 +372,10 @@ Every package you add means you are adding a vulnerability to your site.
 324- go and sure created this file in this address -> products/locale/fa/LC_MESSAGES/django.mo
 325- Restart Server and run again
 326- go this link should be Traslated your selections
+327- Now, You can change between two these in config/settings.py
+328- Change this in product_detail.html -> <h1 class="page-title">{% translate 'product detail of' %} «{{ product.title }}»</h1>
+329- In Terminal -> django-admin makemessages -l fa
+330- look at this fil is added translatation automaticaly in -> products/locale/fa/LC_MESSAGES/django.mo || Why added automated this fil ?
 
 "
 git push -u origin main 
