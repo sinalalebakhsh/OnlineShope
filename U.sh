@@ -376,6 +376,9 @@ Every package you add means you are adding a vulnerability to your site.
 328- Change this in product_detail.html -> <h1 class="page-title">{% translate 'product detail of' %} «{{ product.title }}»</h1>
 329- In Terminal -> django-admin makemessages -l fa
 330- look at this fil is added translatation automaticaly in -> products/locale/fa/LC_MESSAGES/django.mo || Why added automated this fil ?
+331- Write in Terminal + venv have to activated -> django-admin compilemessages
+332- This is just for Test. Create a function in products/views.py
+333- import into products/views.py -> from django.http import HttpResponse
 
 "
 git push -u origin main 

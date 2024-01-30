@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-29 14:45-0500\n"
+"POT-Creation-Date: 2024-01-29 14:53-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,3 +31,7 @@ msgstr "توضیحات محصول"
 #: templates/products/product_detail.html:151
 msgid "Write your comment"
 msgstr "نظر خود را بنویسید"
+
+#: templates/products/product_detail.html:155
+msgid "Submit"
+msgstr ""
