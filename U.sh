@@ -379,6 +379,11 @@ Every package you add means you are adding a vulnerability to your site.
 331- Write in Terminal + venv have to activated -> django-admin compilemessages
 332- This is just for Test. Create a function in products/views.py
 333- import into products/views.py -> from django.http import HttpResponse
+334- add new path in products/urls.py -> path('hello/', test_translation),
+335- import into products/urls.py -> from .views import test_translation
+336- Check this link, should be shows 'HELLO' -->>  http://127.0.0.1:8000/products/hello
+337-  import into products/urls.py  -->>  from django.utils.translation import gettext as _
+338- Change this in function of test_translation
 
 "
 git push -u origin main 
