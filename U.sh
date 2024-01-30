@@ -384,11 +384,13 @@ Every package you add means you are adding a vulnerability to your site.
 336- Check this link, should be shows 'HELLO' -->>  http://127.0.0.1:8000/products/hello
 337-  import into products/urls.py  -->>  from django.utils.translation import gettext as _
 338- Change this in function of test_translation
+339- In Terminal -->> django-admin makemessages -l fa
+340- Go inside this address products/locale/fa/LC_MESSAGES/django.mo , add a translate for "HELLO"
+341- In Terminal -->> django-admin compilemessages
+342- Change Language inside config/settings.py to 'fa'
+343- Check this link, this link should be shows -->> سلام  -->> http://127.0.0.1:8000/products/hello/
 
 "
 git push -u origin main 
 
 # with ScreenShot for showing demo png file
-
-
-
