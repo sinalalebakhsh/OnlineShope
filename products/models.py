@@ -1,6 +1,7 @@
 from django.db import models
 from django.shortcuts import reverse
 from django.contrib.auth import get_user_model
+from django.utils.translation import gettext_lazy as _
 
 
 class Product(models.Model):
@@ -40,7 +41,7 @@ class Comment(models.Model):
         related_name='comments', 
         verbose_name='author',
         )
-    body = models.TextField(verbose_name='Text')
+    body = models.TextField(verbose_name=_('Text'))
     star = models.CharField(max_length=10, choices=PRODUCT_STARS, verbose_name='Score')
 
     date_time_created = models.DateTimeField(auto_now_add=True)

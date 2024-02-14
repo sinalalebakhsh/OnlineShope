@@ -149,6 +149,7 @@
                                                     <div class="border-top py-5 w-100"></div>
                                                     <div class="col-lg-8 m-auto">
                                                         <span class="reply-title pull-right">{% translate 'Write your comment' %}</span>
+                                                        <br>
                                                         <form action="{% url 'comment_create' product.id %}" method="POST">
                                                             {% csrf_token %}
                                                             {{ comment_form|crispy }}

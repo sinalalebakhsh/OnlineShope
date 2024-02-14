@@ -315,7 +315,7 @@ Every package you add means you are adding a vulnerability to your site.
 267- Create two comments for two different products
 268- Create new class in products/admin.py
 269- add this in 'class ProductAdmin' > products/admin.py 
-270- Change product_detail.html on line number 113 : <ul class="review__list">
+270- Change product_detail.html on line number 113 : <ul class='review__list'>
 271- add {% load static %} to product_detail.html
 272- Go in product details in this link shuold be shows detail of comments
 273- Create new file in products directory
@@ -373,7 +373,7 @@ Every package you add means you are adding a vulnerability to your site.
 325- Restart Server and run again
 326- go this link should be Traslated your selections
 327- Now, You can change between two these in config/settings.py
-328- Change this in product_detail.html -> <h1 class="page-title">{% translate 'product detail of' %} «{{ product.title }}»</h1>
+328- Change this in product_detail.html -> <h1 class='page-title'>{% translate 'product detail of' %} «{{ product.title }}»</h1>
 329- In Terminal -> django-admin makemessages -l fa
 330- look at this fil is added translatation automaticaly in -> products/locale/fa/LC_MESSAGES/django.mo || Why added automated this fil ?
 331- Write in Terminal + venv have to activated -> django-admin compilemessages
@@ -385,10 +385,12 @@ Every package you add means you are adding a vulnerability to your site.
 337-  import into products/urls.py  -->>  from django.utils.translation import gettext as _
 338- Change this in function of test_translation
 339- In Terminal -->> django-admin makemessages -l fa
-340- Go inside this address products/locale/fa/LC_MESSAGES/django.mo , add a translate for "HELLO"
+340- Go inside this address products/locale/fa/LC_MESSAGES/django.mo , add a translate for 'HELLO'
 341- In Terminal -->> django-admin compilemessages
 342- Change Language inside config/settings.py to 'fa'
 343- Check this link, this link should be shows -->> سلام  -->> http://127.0.0.1:8000/products/hello/
+344- import this into models.py ->  from django.utils.translation import gettext_lazy as _
+345- Change this in class of Comment in products/models.py
 
 "
 git push -u origin main 
