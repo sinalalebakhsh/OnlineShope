@@ -400,6 +400,17 @@ Every package you add means you are adding a vulnerability to your site.
 352- in Terminal
 353- in products/locale/LC_MESSAGES/django.po Change theses 
 354-in Terminal
+rosetta  
+355-in Terminal (docker in running by default AND )
+356- in Terminal --> docker-compose exec web python -m pip freeze > requirements.txt
+357- add Rosetta in INSTALLED_APPS in config/settings.py
+358- Create new path in config/urls.py
+359- go in this link everything is Right to Left for Farsi Persons -> http://127.0.0.1:8000/admin/
+360- go to this link to see rosetta panel, should be reach that without any errors -> http://127.0.0.1:8000/rosetta/files/project/
+361- Add this lines after 'LANGUAGE_CODE = 'fa'' > config/settings.py
+362- Restart Server
+363- go to this link, http://127.0.0.1:8000/rosetta/files/django/ have to three sections of LANGUAGES
+
 
 "
 git push -u origin main 
