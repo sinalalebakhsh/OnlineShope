@@ -410,7 +410,20 @@ rosetta
 361- Add this lines after 'LANGUAGE_CODE = 'fa'' > config/settings.py
 362- Restart Server
 363- go to this link, http://127.0.0.1:8000/rosetta/files/django/ have to three sections of LANGUAGES
-
+364- Visit this link and brows in that -> http://127.0.0.1:8000/rosetta/files/third-party/
+messages
+365- Go to this link and learn with that -> https://docs.djangoproject.com/en/5.0/ref/contrib/messages/ OR https://docs.djangoproject.com/en/5.0/ref/contrib/messages/#displaying-messages
+366- Copy/Paste this into _base.html after header tag
+367- import this into products/views.py -> from django.contrib import messages
+368- add this line into products/views.py >> test_translation(request) function
+369- Create testHello.html in products/templates/products/ -> testHello.html
+370- add this into it -> testHello.html
+371- Change this in products/views.py  >> test_translation(request) function
+372- visit and check this link, sould have a message in top -> http://127.0.0.1:8000/products/hello/
+373- Change this in _base.html
+374- visit and check this link, sould have a message in top -> http://127.0.0.1:8000/products/hello/
+375- add this in the end of config/settings.py
+Shopping cart
 
 "
 git push -u origin main 

@@ -203,10 +203,11 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
     # EMAIL_HOST_PASSWORD = 'your_gmail_password'
 
 
-
-
-
-
+# For messages framework
+from django.contrib.messages import constants as messages_constants
+MESSAGES_TAGS = {
+    messages_constants.ERROR: 'danger',
+}
 
 
 

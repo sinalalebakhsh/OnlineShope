@@ -14,7 +14,7 @@ from .forms import CommentForm
 def test_translation(request):
     result = _('HELLO')
     messages.success(request, 'This is a success message for you.')
-    return HttpResponse(result)
+    return render(request, 'products/testHello.html')
 
 class ProductListView(generic.ListView):
     # model = Product
