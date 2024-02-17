@@ -391,6 +391,15 @@ Every package you add means you are adding a vulnerability to your site.
 343- Check this link, this link should be shows -->> سلام  -->> http://127.0.0.1:8000/products/hello/
 344- import this into models.py ->  from django.utils.translation import gettext_lazy as _
 345- Change this in class of Comment in products/models.py
+346- In Terminal (in products directory Terminal) -->  django-admin makemessages -l fa
+347- Translate in file products/locale/fa/LC_MESSAGES/django.mo , add a translate for 'Test'
+348- In Terminal (in products directory Terminal)
+349- add <br> tag after this line in product_detail.html
+350- Go this link and check comment table
+351- add this in products/models.py
+352- in Terminal
+353- in products/locale/LC_MESSAGES/django.po Change theses 
+354-in Terminal
 
 "
 git push -u origin main 
