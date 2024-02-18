@@ -438,6 +438,7 @@ Shopping cart
 381- Create cart.py in cart app --> cart.py
 382- Create Cart class in cart.py
 383- add this method into class Cart
+384- add docstring to these methods and Cart class
 
 "
 git push -u origin main 
