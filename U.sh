@@ -435,6 +435,8 @@ Shopping cart
 378- Restart Server, Should be run without any errors
 379- Create new app, write in another Terminal write(docker was running by default) --> docker-compose exec web python manage.py startapp cart
 380- Add in INSTALLED_APPS in config/settings.py
+381- Create cart.py in cart app --> cart.py
+382- Create Cart class in cart.py
 
 "
 git push -u origin main 
