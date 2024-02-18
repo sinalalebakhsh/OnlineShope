@@ -449,7 +449,7 @@ Shopping cart
 392- add these content in cart/forms.py
 393- create this cart/--> templates/cart/cart_detail.html
 394- content of cart_detail.html
-395- create this file in cart/templates/urls.py
+395- create this file in cart/urls.py
 396- content of cart/templates/urls.py
 
 "
