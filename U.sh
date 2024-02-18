@@ -442,6 +442,8 @@ Shopping cart
 385- add a method for remove a product in Cart class
 386- Import this into cart/cart.py --> from products.models import Product
 387- add a method for iteration a product in Cart class
+388- Overwrite this method in class Cart
+389- add a method for clear all products for after purchase
 
 "
 git push -u origin main 

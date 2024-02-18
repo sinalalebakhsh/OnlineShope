@@ -41,6 +41,11 @@ class Cart:
             cart[str(product.id)]['product_obj'] = product
         for item in cart.values():
             yield item
-            
-
+    # ---------------------------------================
+    def __len__(self):
+        return len(self.cart.keys())            
+    # ---------------------------------================
+    def clear(self):
+        del self.session['cart']
+        self.save()
 
