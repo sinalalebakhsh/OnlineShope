@@ -445,6 +445,8 @@ Shopping cart
 388- Overwrite this method in class Cart
 389- add a method for clear all products for after purchase
 390- add a method To collect prices in class Cart
+391- create forms.py in cart directory --> forms.py
+392- add these content in cart/forms.py
 
 "
 git push -u origin main 
