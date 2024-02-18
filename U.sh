@@ -447,11 +447,10 @@ Shopping cart
 390- add a method To collect prices in class Cart
 391- create forms.py in cart directory --> forms.py
 392- add these content in cart/forms.py
-393- create this cart/--> templates/cart_detail.html
-394- create this cart/--> templates/cart/
-395- content of cart_detail.html
-396- create this file in cart/templates/urls.py
-397- content of cart/templates/urls.py
+393- create this cart/--> templates/cart/cart_detail.html
+394- content of cart_detail.html
+395- create this file in cart/templates/urls.py
+396- content of cart/templates/urls.py
 
 "
 git push -u origin main 
