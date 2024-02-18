@@ -437,6 +437,7 @@ Shopping cart
 380- Add in INSTALLED_APPS in config/settings.py
 381- Create cart.py in cart app --> cart.py
 382- Create Cart class in cart.py
+383- add this method into class Cart
 
 "
 git push -u origin main 
