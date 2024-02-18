@@ -440,6 +440,8 @@ Shopping cart
 383- add this method into class Cart
 384- add docstring to these methods and Cart class
 385- add a method for remove a product in Cart class
+386- Import this into cart/cart.py --> from products.models import Product
+387- add a method for iteration a product in Cart class
 
 "
 git push -u origin main 
