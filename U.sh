@@ -430,6 +430,11 @@ messages
 374- visit and check this link, sould have a message in top -> http://127.0.0.1:8000/products/hello/
 375- add this in the end of config/settings.py
 Shopping cart
+376- Delete this function in products/views.py
+377- Delete this path in products/urls.py
+378- Restart Server, Should be run without any errors
+379- Create new app, write in another Terminal write(docker was running by default) --> docker-compose exec web python manage.py startapp cart
+380- Add in INSTALLED_APPS in config/settings.py
 
 "
 git push -u origin main 
