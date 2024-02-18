@@ -12,7 +12,7 @@ class Cart:
             self.session['cart'] = {}
             cart = self.session['cart']
         self.cart = cart 
-
+    # ---------------------------------================
     def add(self, product, quantity=1):
         """
         Add the specified to the cart if was exists
@@ -22,7 +22,8 @@ class Cart:
             self.cart[product_id] = {'quantity': quantity}
         else:
             self.cart[product_id]['quantity'] += quantity
-    
+        self.save()
+    # ---------------------------------================
     def save(self):
         """
         changes session as modified and store it
