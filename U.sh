@@ -450,6 +450,8 @@ Shopping cart
 393- create this cart/--> templates/cart_detail.html
 394- create this cart/--> templates/cart/
 395- content of cart_detail.html
+396- create this file in cart/templates/urls.py
+397- content of cart/templates/urls.py
 
 "
 git push -u origin main 
