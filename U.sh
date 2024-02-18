@@ -439,6 +439,7 @@ Shopping cart
 382- Create Cart class in cart.py
 383- add this method into class Cart
 384- add docstring to these methods and Cart class
+385- add a method for remove a product in Cart class
 
 "
 git push -u origin main 

@@ -14,9 +14,7 @@ class Cart:
         self.cart = cart 
     # ---------------------------------================
     def add(self, product, quantity=1):
-        """
-        Add the specified to the cart if was exists
-        """
+        """ Add the specified to the cart if was exists """
         product_id = str(product.id)
         if product_id not in self.cart:
             self.cart[product_id] = {'quantity': quantity}
@@ -24,10 +22,15 @@ class Cart:
             self.cart[product_id]['quantity'] += quantity
         self.save()
     # ---------------------------------================
+    def remove(self, product):
+        """ Remove a product from the cart """
+        product_id = str(product.id)
+        if product_id in self.cart:
+            del self.cart[product_id]
+            self.save()
+    # ---------------------------------================
     def save(self):
-        """
-        changes session as modified and store it
-        """
+        """ changes session as modified and store it """
         self.session.modified = True
 
 
