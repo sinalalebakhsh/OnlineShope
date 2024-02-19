@@ -451,6 +451,9 @@ Shopping cart
 394- content of cart_detail.html
 395- create this file in cart/urls.py
 396- content of cart/templates/urls.py
+397- add this path in config/urls.py
+398- content of cart/views.py
+399- link in browser, check, should be right 
 
 "
 git push -u origin main 
