@@ -47,7 +47,7 @@
                                 </div>
                                 <div class="product-action d-flex align-items-sm-center align-content-center mb--30">
                                         <!-- BELOW LINES /-->
-                                        <form action="" method="POST">
+                                        <form action="cart:cart_add" method="POST">
                                         {% csrf_token %}
                                         {{ add_to_cart_form.as_p }}
                                         <button type="submit">{% translate 'Add to Cart' %}</button>
