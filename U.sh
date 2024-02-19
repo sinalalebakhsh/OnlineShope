@@ -469,7 +469,8 @@ Shopping cart
 412- Add these instead of past step(411) 
 413- import into cart/urls.py  --> from .views import add_to_cart_view
 414- Create new path in cart/urls.py  --> path('add/<int:product_id>', add_to_cart_view, name='cart_add'),
-415- Change this in line 50 of product_detail.html  --> <form action="cart:cart_add" method="POST">
+415- Change this in line 50 of product_detail.html  --> <form action='{% url 'cart:cart_add' product.id %}' method='POST'>
+416- Check a product and add it to cart with this link: should redirect to cart page correctly  --> http://127.0.0.1:8000/products/2/
 
 "
 git push -u origin main # with ScreenShot for showing demo png file
