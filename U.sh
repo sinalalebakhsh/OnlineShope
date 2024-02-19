@@ -457,6 +457,9 @@ Shopping cart
 400- import this in cart/views.py
 401- add these line into cart_detail_view function in cart/views.py
 402- delete this in cart_detail.html
+403- import these into cart/views.py
+404- create new variable in cart/urls.py --> app_name = 'cart'
+405- Create new function in cart/views.py
 
 "
 git push -u origin main # with ScreenShot for showing demo png file
