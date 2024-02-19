@@ -471,6 +471,8 @@ Shopping cart
 414- Create new path in cart/urls.py  --> path('add/<int:product_id>', add_to_cart_view, name='cart_add'),
 415- Change this in line 50 of product_detail.html  --> <form action='{% url 'cart:cart_add' product.id %}' method='POST'>
 416- Check a product and add it to cart with this link: should redirect to cart page correctly  --> http://127.0.0.1:8000/products/2/
+417- delete/Change price in line 50 of cart_detail.html  --> <span class="money">{{ item.product_obj.price }}</span>
+418- Check this link should be correct for each product price, true numbers  --> http://127.0.0.1:8000/cart/
 
 "
 git push -u origin main # with ScreenShot for showing demo png file
