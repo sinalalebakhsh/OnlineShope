@@ -473,6 +473,9 @@ Shopping cart
 416- Check a product and add it to cart with this link: should redirect to cart page correctly  --> http://127.0.0.1:8000/products/2/
 417- delete/Change price in line 50 of cart_detail.html  --> <span class='money'>{{ item.product_obj.price }}</span>
 418- Check this link should be correct for each product price, true numbers  --> http://127.0.0.1:8000/cart/
+419- Delete/Change value tag in line 60 of cart_detail.html  --> <span class='money'>{{ item.product_obj.price }}</span>
+420- Change line 50 of cart_detail.html like this
+421- Check this link should be correct for numbers of product price in purchase process  --> http://127.0.0.1:8000/cart/
 
 "
 git push -u origin main # with ScreenShot for showing demo png file
