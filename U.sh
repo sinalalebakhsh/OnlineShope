@@ -460,6 +460,9 @@ Shopping cart
 403- import these into cart/views.py
 404- create new variable in cart/urls.py --> app_name = 'cart'
 405- Create new function in cart/views.py
+406- go in cart_detail.html and create for loop like this in line 33
+407- change this table row like this (in step 406)  -->>   <a href="product-details.html">{{ item.product_obj.title }}</a>
+408- check this link in broswer should be see empty cart -->> http://127.0.0.1:8000/cart/
 
 "
 git push -u origin main # with ScreenShot for showing demo png file
