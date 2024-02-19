@@ -454,6 +454,8 @@ Shopping cart
 397- add this path in config/urls.py
 398- content of cart/views.py
 399- link in browser, check, should be right 
+400- import this in cart/views.py
+401- add these line into cart_detail_view function in cart/views.py
 
 "
 git push -u origin main 
