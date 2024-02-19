@@ -482,6 +482,13 @@ Shopping cart
 425- change this line in cart/forms.py  --> QUANTITY_CHOICES = [(i, str(i)) for i in range(1, 31)]
 426- Check this link and write more than 30 number for buy a product, should don't let to pass --> http://127.0.0.1:8000/products/2/
 427- Delete again these lines from cart/views.py
+Delete Items in Cart
+428- Create new function in cart/views.py
+429- change this line in cart_detail.html (from line number 36) --> <a href='{% url 'cart:cart_remove' item.product_obj.id %}'>
+430- import to urls.py --> from .views import remove_from_cart
+431- create new path in cart/urls.py --> path('remove/<int:product_id>/', remove_from_cart, name='cart_remove'),
+432- delete a product , shuold be delete it --> http://127.0.0.1:8000/products/2/
+433- change this in cart_detail.html (from line number 45) --> <a href='{{ item.product_obj.get_absolute_url }}'>
 
 "
 git push -u origin main # with ScreenShot for showing demo png file
