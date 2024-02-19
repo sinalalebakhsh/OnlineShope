@@ -456,8 +456,7 @@ Shopping cart
 399- link in browser, check, should be right 
 400- import this in cart/views.py
 401- add these line into cart_detail_view function in cart/views.py
+402- delete this in cart_detail.html
 
 "
-git push -u origin main 
-
-# with ScreenShot for showing demo png file
+git push -u origin main # with ScreenShot for showing demo png file
