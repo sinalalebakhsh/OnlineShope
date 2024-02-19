@@ -481,6 +481,7 @@ Shopping cart
 424- add this in line number 53 of product_detail.html this
 425- change this line in cart/forms.py  --> QUANTITY_CHOICES = [(i, str(i)) for i in range(1, 31)]
 426- Check this link and write more than 30 number for buy a product, should don't let to pass --> http://127.0.0.1:8000/products/2/
+427- Delete again these lines from cart/views.py
 
 "
 git push -u origin main # with ScreenShot for showing demo png file
