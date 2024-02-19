@@ -463,6 +463,10 @@ Shopping cart
 406- go in cart_detail.html and create for loop like this in line 33
 407- change this table row like this (in step 406)  -->>   <a href="product-details.html">{{ item.product_obj.title }}</a>
 408- check this link in broswer should be see empty cart -->> http://127.0.0.1:8000/cart/
+409- import into products/views.py
+410- add this after context['comment_form'] in ProductDetailView into products/views.py
+411- Delete these lines from 49 to 56 in product_detail.html
+412- Add these instead of past step(411) 
 
 "
 git push -u origin main # with ScreenShot for showing demo png file
