@@ -461,7 +461,7 @@ Shopping cart
 404- create new variable in cart/urls.py --> app_name = 'cart'
 405- Create new function in cart/views.py
 406- go in cart_detail.html and create for loop like this in line 33
-407- change this table row like this (in step 406)  -->>   <a href="product-details.html">{{ item.product_obj.title }}</a>
+407- change this table row like this (in step 406)  -->>   <a href='product-details.html'>{{ item.product_obj.title }}</a>
 408- check this link in broswer should be see empty cart -->> http://127.0.0.1:8000/cart/
 409- import into products/views.py
 410- add this after context['comment_form'] in ProductDetailView into products/views.py
@@ -471,7 +471,7 @@ Shopping cart
 414- Create new path in cart/urls.py  --> path('add/<int:product_id>', add_to_cart_view, name='cart_add'),
 415- Change this in line 50 of product_detail.html  --> <form action='{% url 'cart:cart_add' product.id %}' method='POST'>
 416- Check a product and add it to cart with this link: should redirect to cart page correctly  --> http://127.0.0.1:8000/products/2/
-417- delete/Change price in line 50 of cart_detail.html  --> <span class="money">{{ item.product_obj.price }}</span>
+417- delete/Change price in line 50 of cart_detail.html  --> <span class='money'>{{ item.product_obj.price }}</span>
 418- Check this link should be correct for each product price, true numbers  --> http://127.0.0.1:8000/cart/
 
 "
