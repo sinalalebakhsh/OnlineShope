@@ -49,7 +49,7 @@
                                         <!-- BELOW LINES /-->
                                         <form action="{% url 'cart:cart_add' product.id %}" method="POST">
                                         {% csrf_token %}
-                                        {{ add_to_cart_form.as_p }}
+                                        {{ add_to_cart_form|crispy }}
                                         <button type="submit">{% translate 'Add to Cart' %}</button>
                                     </form>                                
                                 </div>

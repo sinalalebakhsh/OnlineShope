@@ -476,6 +476,7 @@ Shopping cart
 419- Delete/Change value tag in line 60 of cart_detail.html  --> <span class='money'>{{ item.product_obj.price }}</span>
 420- Change line 50 of cart_detail.html like this
 421- Check this link should be correct for numbers of product price in purchase process  --> http://127.0.0.1:8000/cart/
+422- Change line 52 number of product_detail.html  --> {{ add_to_cart_form|crispy }}
 
 "
 git push -u origin main # with ScreenShot for showing demo png file
