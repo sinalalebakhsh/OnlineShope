@@ -477,6 +477,10 @@ Shopping cart
 420- Change line 50 of cart_detail.html like this
 421- Check this link should be correct for numbers of product price in purchase process  --> http://127.0.0.1:8000/cart/
 422- Change line 52 number of product_detail.html  --> {{ add_to_cart_form|crispy }}
+423- Delete line number 52 of product_detail.html this  --> {{ add_to_cart_form|crispy }}
+424- add this in line number 53 of product_detail.html this
+425- change this line in cart/forms.py  --> QUANTITY_CHOICES = [(i, str(i)) for i in range(1, 31)]
+426- Check this link and write more than 30 number for buy a product, should don't let to pass --> http://127.0.0.1:8000/products/2/
 
 "
 git push -u origin main # with ScreenShot for showing demo png file
