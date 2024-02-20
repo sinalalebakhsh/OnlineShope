@@ -493,6 +493,9 @@ Delete Items in Cart
 435- change this method in cart/cart.py
 436- add this condition in add method in cart/cart.py before else
 437- change this in cart/views.py  -->  cart.add(product, quantity, replace_current_quantity=cleaned_data['inplace'])
+438-  in cart/views.py
+439- create new form in cart_detail.html in line number 56 
+440- final changes of form cart_detail.html in line number 56
 
 "
 git push -u origin main # with ScreenShot for showing demo png file
