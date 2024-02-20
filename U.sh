@@ -492,6 +492,7 @@ Delete Items in Cart
 434- add this line in AddToCartProductForm in cart/forms.py  -->     inplace = forms.BooleanField(required=False, widget=forms.HiddenInput)
 435- change this method in cart/cart.py
 436- add this condition in add method in cart/cart.py before else
+437- change this in cart/views.py  -->  cart.add(product, quantity, replace_current_quantity=cleaned_data['inplace'])
 
 "
 git push -u origin main # with ScreenShot for showing demo png file
