@@ -490,6 +490,8 @@ Delete Items in Cart
 432- delete a product , shuold be delete it --> http://127.0.0.1:8000/products/2/
 433- change this in cart_detail.html (from line number 45) --> <a href='{{ item.product_obj.get_absolute_url }}'>
 434- add this line in AddToCartProductForm in cart/forms.py  -->     inplace = forms.BooleanField(required=False, widget=forms.HiddenInput)
+435- change this method in cart/cart.py
+436- add this condition in add method in cart/cart.py before else
 
 "
 git push -u origin main # with ScreenShot for showing demo png file
