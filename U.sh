@@ -518,6 +518,8 @@ Delete Items in Cart
 460- import this to cart/views.py -> from django.views.decorators.http import require_POST
 461- add this line before add_to_cart_view function in cart/views.py
 462- import these to cart.py --> from django.contrib import messages   from django.utils.translation import gettext as _
+463- add this in line number 28 before 'self.save()' in 'add' method > cart.py  --> messages.success(self.request, _('Product successfuly added to cart'))
+464- add this in line before 'self.save()' > cart.py -->   messages.error(self.request, _('Product successfully deleted to cart'))
 
 "
 git push -u origin main # with ScreenShot for showing demo png file
