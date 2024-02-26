@@ -507,6 +507,9 @@ Delete Items in Cart
 449- get out side this two lines from last div in line from 66/67 number line to 67/68 cart_detail.html
 450- change  number 55 in cart_detail.html
 451- change number 68 in cart_detail.html
+452- add this line to cart.py in class Cart in def __iter__
+453- change line number 73 in cart_detail.html
+454- Check last changes in this link
 
 "
 git push -u origin main # with ScreenShot for showing demo png file
