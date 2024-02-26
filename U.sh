@@ -510,6 +510,10 @@ Delete Items in Cart
 452- add this line to cart.py in class Cart in def __iter__
 453- change line number 73 in cart_detail.html
 454- Check last changes in this link
+455- Change all in the class Cart in get_total_price method cart.py
+456- Delete this in cart_detail.html
+457- change line number 100 in cart_detail.html
+458- Check last changes in this link
 
 "
 git push -u origin main # with ScreenShot for showing demo png file

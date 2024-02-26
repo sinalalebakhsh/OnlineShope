@@ -91,21 +91,13 @@
                             <div class="cart-totals">
                                 <h5 class="font-size-14 font-bold mb--15">مجموع</h5>
                                 <div class="cart-calculator">
-                                    <div class="cart-calculator__item">
-                                        <div class="cart-calculator__item--head">
-                                            <span>مجموع</span>
-                                        </div>
-                                        <div class="cart-calculator__item--value">
-                                            <span>۳۴۶,۰۰۰ تومان</span>
-                                        </div>
-                                    </div>
                                     <div class="cart-calculator__item order-total">
                                         <div class="cart-calculator__item--head">
                                             <span>جمع کل</span>
                                         </div>
                                         <div class="cart-calculator__item--value">
                                             <span class="product-price-wrapper">
-                                                <span class="money">۳۴۶,۰۰۰ تومان</span>
+                                                <span class="money">{{ cart.get_total_price }} تومان</span>
                                             </span>
                                         </div>
                                     </div>
