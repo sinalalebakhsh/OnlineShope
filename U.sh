@@ -506,6 +506,7 @@ Delete Items in Cart
 448- change linke number 42 in cart_detail.html
 449- get out side this two lines from last div in line from 66/67 number line to 67/68 cart_detail.html
 450- change  number 55 in cart_detail.html
+451- change number 68 in cart_detail.html
 
 "
 git push -u origin main # with ScreenShot for showing demo png file
