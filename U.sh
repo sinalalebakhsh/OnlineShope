@@ -496,6 +496,14 @@ Delete Items in Cart
 438-  in cart/views.py
 439- create new form in cart_detail.html in line number 56 
 440- final changes of form cart_detail.html in line number 56
+441- delete form of cart_detail.html in line number 17 and 89
+442- change this in line number 61 of cart_detail.html
+443- Restart Server
+444- check this link and change number a product in purchase process, should be replace number
+445- change line number 20 in cart.py with this
+446- change linke number 40 in cart_detail.html
+447- change linke number 25 in cart_detail.html
+448- change linke number 42 in cart_detail.html
 
 "
 git push -u origin main # with ScreenShot for showing demo png file

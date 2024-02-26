@@ -17,7 +17,7 @@ class Cart:
         """ Add the specified to the cart if was exists """
         product_id = str(product.id)
         if product_id not in self.cart:
-            self.cart[product_id] = {'quantity': quantity}
+            self.cart[product_id] = {'quantity': 0}
         if replace_current_quantity:
             self.cart[product_id]['quantity'] = quantity
         else:
