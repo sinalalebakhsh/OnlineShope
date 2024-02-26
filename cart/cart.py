@@ -1,3 +1,6 @@
+from django.contrib import messages
+from django.utils.translation import gettext as _
+
 from products.models import Product
 
 class Cart:

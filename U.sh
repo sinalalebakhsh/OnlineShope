@@ -516,6 +516,8 @@ Delete Items in Cart
 458- Check last changes in this link
 459- add table in 'if' condition in cart_detail.html
 460- import this to cart/views.py -> from django.views.decorators.http import require_POST
+461- add this line before add_to_cart_view function in cart/views.py
+462- import these to cart.py --> from django.contrib import messages   from django.utils.translation import gettext as _
 
 "
 git push -u origin main # with ScreenShot for showing demo png file
