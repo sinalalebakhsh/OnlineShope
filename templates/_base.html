@@ -1,4 +1,6 @@
 {% load static %}
+{% load i18n %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -93,18 +95,21 @@
                                     <i class="flaticon flaticon-user"></i>
                                 </a>
                                 <ul class="user-info-menu">
-                                    <li>
-                                        <a class="text-right" href="my-account.html">حساب کاربری</a>
-                                    </li>
-                                    <li>
-                                        <a class="text-right" href="cart.html">سبد خرید</a>
-                                    </li>
-                                    <li>
-                                        <a class="text-right" href="wishlist.html">علاقه مندی ها</a>
-                                    </li>
-                                    <li>
-                                        <a class="text-right" href="order-tracking.html">تاریخچه سفارشات</a>
-                                    </li>
+                                    {% if user.is_authenticated %}
+                                        <li>
+                                            <a class="text-right" href="{% url 'account_logout' %}">{% translate 'Logout' %}</a>
+                                        </li>
+                                        <li>
+                                            <a class="text-right" href="profile.html">{% translate 'Profile' %}</a>
+                                        </li>
+                                    {% else %}
+                                        <li>
+                                            <a class="text-right" href="{% url 'account_login' %}">{% translate 'Login' %}</a>
+                                        </li>
+                                        <li>
+                                            <a class="text-right" href="{% url 'account_signup' %}">{% translate 'Signup' %}</a>
+                                        </li>
+                                    {% endif %}
                                 </ul>
                             </li>
                             <li class="header-toolbar__item">
