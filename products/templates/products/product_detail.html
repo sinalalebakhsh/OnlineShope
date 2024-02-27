@@ -161,6 +161,7 @@
                                                         <br>
                                                         {% if user.is_authenticated %}
                                                             <span class="reply-title pull-right">{% translate 'Write your comment' %}</span>
+                                                            <br>
                                                             <form action="{% url 'comment_create' product.id %}" method="POST">
                                                                 {% csrf_token %}
                                                                 {{ comment_form|crispy }}

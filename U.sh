@@ -528,6 +528,8 @@ Delete Items in Cart
 470- add in line number 163 in product_detail.html
 471- in Terminal go in products directory  --> django-admin makemessages -l fa
 472- restart server
+473- login with an user (admin is best)
+474- add this after <span> in line number 164 in product_detail.html
 
 "
 git push -u origin main # with ScreenShot for showing demo png file
