@@ -530,6 +530,10 @@ Delete Items in Cart
 472- restart server
 473- login with an user (admin is best)
 474- add this after <span> in line number 164 in product_detail.html
+475- go in _base.html add this after <ul class='user-info-menu'> tag in line number 96
+476- add this in first of _base.html
+477- in Terminal go in products directory
+478- go to this link and translate to what you want
 
 "
 git push -u origin main # with ScreenShot for showing demo png file
