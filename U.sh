@@ -519,7 +519,12 @@ Delete Items in Cart
 461- add this line before add_to_cart_view function in cart/views.py
 462- import these to cart.py --> from django.contrib import messages   from django.utils.translation import gettext as _
 463- add this in line number 28 before 'self.save()' in 'add' method > cart.py  --> messages.success(self.request, _('Product successfuly added to cart'))
-464- add this in line before 'self.save()' > cart.py -->   messages.error(self.request, _('Product successfully deleted to cart'))
+464- add this in line before 'self.save()' > cart.py -->   messages.success(self.request, _('Product successfully deleted to cart'))
+465- create locale directory in cart directory  --> locale
+466- in Terminal go in cart directory  --> django-admin makemessages -l fa
+467- go in this link than translate that messages you need to show  --> http://127.0.0.1:8000/rosetta/files/third-party/fa/1/
+468- Logout from user
+469- go to this link and write a comment  -->  http://127.0.0.1:8000/products/comment/2/
 
 "
 git push -u origin main # with ScreenShot for showing demo png file
