@@ -525,6 +525,7 @@ Delete Items in Cart
 467- go in this link than translate that messages you need to show  --> http://127.0.0.1:8000/rosetta/files/third-party/fa/1/
 468- Logout from user
 469- go to this link and write a comment  -->  http://127.0.0.1:8000/products/comment/2/
+470- add in line number 163 in product_detail.html
 
 "
 git push -u origin main # with ScreenShot for showing demo png file

@@ -160,12 +160,18 @@
                                                     <div class="col-lg-8 m-auto">
                                                         <span class="reply-title pull-right">{% translate 'Write your comment' %}</span>
                                                         <br>
-                                                        <form action="{% url 'comment_create' product.id %}" method="POST">
-                                                            {% csrf_token %}
-                                                            {{ comment_form|crispy }}
-                                                            <input type="submit" value="{% translate 'Submit' %}">
-                                                        </form>
-                                                    
+                                                        {% if %}
+                                                            <form action="{% url 'comment_create' product.id %}" method="POST">
+                                                                {% csrf_token %}
+                                                                {{ comment_form|crispy }}
+                                                                <input type="submit" value="{% translate 'Submit' %}">
+                                                            </form>
+                                                        {% else %}
+                                                            <p>
+                                                                {% translate 'To submit a comment please' %}
+                                                                <a href="{% url 'account_login' %}">{% translate 'Login' %}</a>
+                                                            </p>
+                                                        {% endif %}
                                                     </div>
                                                 </div>
                                             </div>
