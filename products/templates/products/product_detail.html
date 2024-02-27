@@ -159,7 +159,7 @@
                                                     <div class="border-top py-5 w-100"></div>
                                                     <div class="col-lg-8 m-auto">
                                                         <br>
-                                                        {% if %}
+                                                        {% if user.is_authenticated %}
                                                             <span class="reply-title pull-right">{% translate 'Write your comment' %}</span>
                                                             <form action="{% url 'comment_create' product.id %}" method="POST">
                                                                 {% csrf_token %}
