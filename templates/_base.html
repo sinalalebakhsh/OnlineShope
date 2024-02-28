@@ -96,6 +96,7 @@
                                 </a>
                                 <ul class="user-info-menu">
                                     {% if user.is_authenticated %}
+                                    
                                         <li>
                                             <a class="text-right" href="{% url 'account_logout' %}">{% translate 'Logout' %}</a>
                                         </li>
