@@ -5,6 +5,7 @@ git commit -m " 💠 121-Django/Practice_01-30/Practice-13 Online Shop Image-16 
                 Shopping cart           
                 Sessions
                 Cookies
+                
                 http: stateless memory
 
 1- write in a directory Terminal 
@@ -534,6 +535,13 @@ Delete Items in Cart
 476- add this in first of _base.html
 477- in Terminal go in products directory
 478- go to this link and translate to what you want
+Context Processors
+479- Create context_processors.py in cart directory -->  context_processors.py
+480- Create new function in context_processors.py
+481- Import this in context_processors.py --> from .cart import Cart
+482- add this in config/settings.py in TEMPLATES in context_processors end of that
+483- add this in _base.html in line number 90
+484- Restart Server Ctrl+C than 
 
 "
 git push -u origin main # with ScreenShot for showing demo png file
