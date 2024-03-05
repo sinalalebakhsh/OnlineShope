@@ -542,6 +542,7 @@ Context Processors
 482- add this in config/settings.py in TEMPLATES in context_processors end of that
 483- add this in _base.html in line number 90
 484- Restart Server Ctrl+C than 
+485- Add a product for example check all pages most be shows number of products you want to buy for example
 
 "
 git push -u origin main # with ScreenShot for showing demo png file
