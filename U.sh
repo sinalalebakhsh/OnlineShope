@@ -548,5 +548,6 @@ Context Processors
 488- check again these links --->>> http://127.0.0.1:8000/   OR http://127.0.0.1:8000/products/
 489- Cut than Change than Copy this code and Create file with name ... in ... directory 
 
+
 "
 git push -u origin main # with ScreenShot for showing demo png file
