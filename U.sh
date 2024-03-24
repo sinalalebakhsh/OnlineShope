@@ -549,5 +549,6 @@ Context Processors
 489- Cut than Change than Copy this code and Create file with name ... in ... directory 
 
 
+
 "
 git push -u origin main # with ScreenShot for showing demo png file
