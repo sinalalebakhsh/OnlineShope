@@ -1,2 +1,14 @@
 docker-compose exec web python manage.py startapp accounts
-add in config/setting.py ->  INSTALLED_APPS = [ ... 'accounts' ]
+
+add in config/setting.py ->  INSTALLED_APPS = [ ... 'accounts', ]
+
+add in accounts/models.py -> 
+from django.contrib.auth.models import AbstractUser
+class CustomUser(AbstractUser):
+    pass
+
+add in config/setting.py ->
+# accounts config
+AUTH_USER_MODEL = 'accounts.CustomUser'
+
+
