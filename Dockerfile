@@ -8,6 +8,8 @@ ENV PYTHONUNBUFFERED 1
 
 WORKDIR /code
 
+RUN pip install --upgrade pip
+
 # Copy the requirements.txt file into the container at /code
 COPY requirements.txt /code/
 
