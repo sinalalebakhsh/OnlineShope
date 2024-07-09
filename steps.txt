@@ -11,4 +11,6 @@ add in config/setting.py ->
 # accounts config
 AUTH_USER_MODEL = 'accounts.CustomUser'
 
+add in config/setting.py -> import os
+
 
