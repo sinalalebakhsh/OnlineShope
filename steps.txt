@@ -33,6 +33,7 @@ class CustomUserChangeForm(UserChangeForm):
         fields = ('email', 'username',)
 
 
+## ADD these in accounts/admin.py
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from .models import CustomUser
@@ -43,7 +44,6 @@ class CustomUserAdmin(UserAdmin):
     add_form = CustomUserCreationForm
     form = CustomUserChangeForm
     list_display = ('email', 'username')
-
 # @admin.register(CustomUser)
 # Instead of :
 # admin.site.register(CustomUser, CustomUserAdmin)
