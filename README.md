@@ -2,4 +2,4 @@
 
 ## How run?
 
-    read all Steps directory
+    read all "Steps" directory
