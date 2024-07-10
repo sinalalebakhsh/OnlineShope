@@ -53,5 +53,22 @@ docker-compose exec web python manage.py makemigrations
 docker-compose exec web python manage.py migrate
 
 
+sudo apt install certbot
+sudo certbot certonly --standalone -d sina.sinalalehbakhsh.monster
+
+sudo cp /etc/letsencrypt/live/sina.sinalalehbakhsh.monster/fullchain.pem /home/django/OnlineShope
+sudo cp /etc/letsencrypt/live/sina.sinalalehbakhsh.monster/privkey.pem /home/django/OnlineShope
+
+
+## Additional Tips
+## Automate certificate renewal: 
+## Certificates from Let's Encrypt expire every 90 days. 
+## Set up a cron job to renew the certificates and reload the Nginx configuration.
+sudo crontab -e
+
+## Add the following line to the cron file:
+0 3 * * * certbot renew --post-hook "docker exec <NGINX_CONTAINER_NAME> nginx -s reload"
+
+
 
 
