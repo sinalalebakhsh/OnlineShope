@@ -1,3 +1,6 @@
+FOR FIRST TIME to Run in fresh VPS
+
+
 sudo apt install certbot
 
 certbot certonly --standalone --agree-tos --register-unsafely-without-email -d sina.sinalalehbakhsh.monster -v
