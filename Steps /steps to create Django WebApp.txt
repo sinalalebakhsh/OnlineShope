@@ -59,6 +59,34 @@ docker-compose exec web python manage.py createsuperuser
 http://0.0.0.0:8000/admin
 
 
+## Add in config/setting.py
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+
+
+## Add in nginx/nginx.conf ->
+    http { ...
+
+    location = /favicon.ico { access_log off; log_not_found off; }
+    location /static/ {
+        root /home/django/OnlineShope;
+    }
+
+    location / {
+        include proxy_params;
+        proxy_pass http://unix:/run/gunicorn.sock;
+    }
+    
+}
+
+
+## Write in Terminal
+python manage.py collectstatic
+
+
+## Change in nginx/nginx.conf
+        root /home/sina/01-Repo/onlineShope/static;
 
 
 
