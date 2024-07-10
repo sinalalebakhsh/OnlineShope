@@ -1,0 +1,55 @@
+##### Option 1: Adjust System Settings
+
+## Open the sysctl.conf file:
+sudo nano /etc/sysctl.conf
+
+
+
+## Add the following line to allow non-root users to bind to port 443:
+net.ipv4.ip_unprivileged_port_start=443
+
+
+## Save the file and exit the editor.
+
+
+## Reload the sysctl configuration:
+sudo sysctl -p
+
+
+
+##### Option 2: Use Ports Above 1024
+
+## Updated docker-compose.yml:
+  version: '3.9'
+  services:
+    web:
+      build: .
+      command: sh -c "python manage.py makemigrations && python manage.py migrate && gunicorn myproject.wsgi:application --bind 0.0.0.0:8000"
+      volumes:
+        - .:/code
+      ports:
+        - "8000:8000"
+      expose:
+        - "8000"
+      env_file:
+        - .env
+    nginx:
+      image: nginx:latest
+      ports:
+        - "8080:80"
+        - "8443:443"
+      volumes:
+        - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+        - ./certs:/etc/nginx/certs:ro
+      depends_on:
+        - web
+    db:
+      image: postgres:14
+      environment:
+        - "POSTGRES_HOST_AUTH_METHOD=trust"
+
+docker-compose down
+docker-compose up --build
+
+
+
