@@ -90,3 +90,6 @@ python manage.py collectstatic
 
 
 
+## write in terminal
+docker-compose exec web python manage.py startapp pages
+## ADD in config/setting.py ->  INSTALLED_APPS = [ ... 'accounts', 'pages',]
