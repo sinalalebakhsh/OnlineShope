@@ -3,18 +3,16 @@ version: '3.9'
 services:
   web:
     build: .
-    # command: python manage.py runserver 0.0.0.0:8000
-    command: >
-      gunicorn myproject.wsgi:application --bind 0.0.0.0:8000
-      sh -c "python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    command: sh -c "python manage.py makemigrations && python manage.py migrate && gunicorn myproject.wsgi:application --bind 0.0.0.0:8000"
     volumes:
       - .:/code
     ports:
-      - 8000:8000
+      - "8000:8000"
     expose:
       - "8000"
     env_file:
       - .env
+
   nginx:
     image: nginx:latest
     ports:
@@ -25,6 +23,7 @@ services:
       - ./certs:/etc/nginx/certs
     depends_on:
       - web
+
   db:
     image: postgres:14
     environment:
