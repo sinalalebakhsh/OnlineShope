@@ -48,8 +48,6 @@ class CustomUserAdmin(UserAdmin):
 # Instead of :
 # admin.site.register(CustomUser, CustomUserAdmin)
 
-
-
 ## Migrate
 docker-compose exec web python manage.py makemigrations
 docker-compose exec web python manage.py migrate
@@ -57,8 +55,8 @@ docker-compose exec web python manage.py migrate
 ## Create Super User
 docker-compose exec web python manage.py createsuperuser
 
-
-
+## Check
+http://0.0.0.0:8000/admin
 
 
 
