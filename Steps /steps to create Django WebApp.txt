@@ -89,7 +89,18 @@ python manage.py collectstatic
         root /home/sina/01-Repo/onlineShope/static;
 
 
-
 ## write in terminal
 docker-compose exec web python manage.py startapp pages
 ## ADD in config/setting.py ->  INSTALLED_APPS = [ ... 'accounts', 'pages',]
+
+
+## Add in pages/views.py ->
+from django.views.generic import TemplateView
+class HomePageView(TemplateView):
+    template_name = 'home.html'
+class AboutUsPageView(TemplateView):
+    template_name = 'pages/aboutus.html'
+
+
+
+
