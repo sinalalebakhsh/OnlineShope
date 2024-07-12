@@ -208,6 +208,8 @@ class CustomUserAdmin(UserAdmin):
     list_display = ('email', 'username')
 
 
+# Change this line in Docker-compose.yml
+command: sh -c "python manage.py makemigrations && python manage.py migrate && python /code/manage.py runserver 0.0.0.0:8000"
 
 
 
