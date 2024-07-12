@@ -168,4 +168,10 @@ docker-compose exec web python manage.py startapp accounts
 'accounts',
 
 
+# Add this
+echo from django.contrib.auth.models import AbstractUser >> accounts/models.py
 
+
+# Add this
+class CustomUser(AbstractUser):
+    pass
