@@ -191,5 +191,7 @@ class CustomUserCreationForm(UserCreationForm):
 
 
 # Add config/setting.py
+# accounts config
+AUTH_USER_MODEL = 'accounts.CustomUser'
 
 
