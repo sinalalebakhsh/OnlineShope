@@ -175,3 +175,12 @@ echo from django.contrib.auth.models import AbstractUser >> accounts/models.py
 # Add this
 class CustomUser(AbstractUser):
     pass
+
+
+# Create
+touch accounts/forms.py
+
+# Add in accounts/forms.py
+from django.contrib.auth.forms import UserCreationForm, UserChangeForm 
+
+
