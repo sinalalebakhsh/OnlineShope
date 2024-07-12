@@ -161,6 +161,11 @@ docker-compose up --build
 # http://0.0.0.0:8000/
 
 
+docker-compose exec web python manage.py startapp accounts
+
+
+# Add in config/setting.py -> in INSTALLED_APPS = [ here ]
+'accounts',
 
 
 
