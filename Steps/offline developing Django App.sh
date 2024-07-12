@@ -211,7 +211,10 @@ class CustomUserAdmin(UserAdmin):
 # Change this line in Docker-compose.yml
 command: sh -c "python manage.py makemigrations && python manage.py migrate && python /code/manage.py runserver 0.0.0.0:8000"
 
+# Create Super user
+docker-compose exec web python manage.py createsuperuser
 
+git rm db.sqlite3 --cached
 
 
 
