@@ -1,15 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
-</head>
-<body>
+{% extends '_base.html' %}
+{% block page_title %}
+    Login
+{% endblock %}
+{% block content %}
+    <h1>Login</h1>
     <form action="" method="POST">
         {% csrf_token %}
         {{ form.as_p }}
         <input type="submit" value="Login">
     </form>
-</body>
-</html>
+{% endblock %}
