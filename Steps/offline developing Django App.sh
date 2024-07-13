@@ -345,6 +345,13 @@ registration/login.html
 pipenv install django-crispy-forms
 pipenv requirements > requirements.txt
 
+# add in config/settings.py
+INSTALLED_APPS = [
+    ...
+    'crispy_forms',
+    ...
+
+]
 
 
 
