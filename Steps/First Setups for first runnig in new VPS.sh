@@ -22,3 +22,6 @@ docker pull python:3.10
 docker pull postgres:14
 
 docker pull nginx:latest
+
+
+pip install --upgrade pip

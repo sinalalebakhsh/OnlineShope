@@ -497,8 +497,14 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
 ]
 
+
+
+
 # RENAME templates/registration directory to
 account
+
+
+
 
 
 
