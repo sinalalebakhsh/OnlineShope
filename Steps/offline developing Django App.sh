@@ -341,7 +341,9 @@ registration/login.html
 </html>
 
 
-
+# Install crispy-forms
+pipenv install django-crispy-forms
+pipenv requirements > requirements.txt
 
 
 
