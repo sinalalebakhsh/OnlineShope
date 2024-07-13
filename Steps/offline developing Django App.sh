@@ -244,7 +244,8 @@ TEMPLATES = [
     }
 ]
 
-
+# Create in pages
+templates/pages/aboutus.html
 
 
 
