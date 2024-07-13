@@ -1,6 +1,10 @@
 ## Set up your VPS: 
 sudo apt update && sudo apt upgrade
 
+# IF connection lost:
+    # sudo dpkg --configure -a
+
+    
 
 ## Docker:
 sudo apt install docker.io
