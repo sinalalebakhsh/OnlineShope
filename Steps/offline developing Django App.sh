@@ -218,6 +218,11 @@ git rm db.sqlite3 --cached
 
 docker-compose exec web python manage.py startapp pages
 
+# Add in config/setting.py 
+INSTALLED_APPS = [ ... 
+'pages',
+]
+
 
 
 
