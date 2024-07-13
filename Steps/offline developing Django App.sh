@@ -449,6 +449,10 @@ CRISPY_TEMPLATE_PACK = 'bootstrap'
 
 
 # Test App link
+http://0.0.0.0:8000/accounts/signup/
+http://0.0.0.0:8000/accounts/login/
+
+
 
 
 
