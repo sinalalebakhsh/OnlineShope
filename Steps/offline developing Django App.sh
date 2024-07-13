@@ -216,7 +216,7 @@ docker-compose exec web python manage.py createsuperuser
 
 git rm db.sqlite3 --cached
 
-
+docker-compose exec web python manage.py startapp pages
 
 
 
