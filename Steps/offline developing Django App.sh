@@ -420,8 +420,16 @@ _base.html
 CRISPY_TEMPLATE_PACK = 'bootstrap'
 
 
+# Add templates/registration/signup.html
+...
+{% load crispy_forms_tags %}
+...
 
 
+# Add templates/registration/login.html
+...
+{% load crispy_forms_tags %}
+...
 
 
 
