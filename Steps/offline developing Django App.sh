@@ -299,6 +299,10 @@ class SignUpView(CreateView):
     success_url = reverse_lazy('login')
 
 
+# CREate in templates
+registration/signup.html
+registration/login.html
+
 
 
 
