@@ -255,7 +255,8 @@ urlpatterns = [
     path('', include('pages.urls')),
 ]
 
-
+# Create in pages
+urls.py
 
 
 
