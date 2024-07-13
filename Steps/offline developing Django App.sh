@@ -454,7 +454,8 @@ http://0.0.0.0:8000/accounts/login/
 
 
 
-
+# go here for allauth
+https://docs.allauth.org/en/latest/installation/quickstart.html?
 
 
 
