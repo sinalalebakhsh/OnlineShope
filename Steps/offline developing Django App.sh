@@ -343,12 +343,15 @@ registration/login.html
 
 # Install crispy-forms
 pipenv install django-crispy-forms
+pipenv install crispy-bootstrap4
 pipenv requirements > requirements.txt
+docker-compose up --build
 
 # add in config/settings.py
 INSTALLED_APPS = [
     ...
     'crispy_forms',
+    'crispy_bootstrap4',
     ...
 
 ]
@@ -445,6 +448,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap'
 ...
 
 
+# Test App link
 
 
 

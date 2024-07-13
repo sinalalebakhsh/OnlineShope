@@ -46,6 +46,7 @@ INSTALLED_APPS = [
 
     # Packages
     'crispy_forms',
+    'crispy_bootstrap4',
 
     # APPs
     'accounts',
@@ -146,7 +147,7 @@ LOGOUT_REDIRECT_URL = 'home'
 
 # You can set your default template pack for your project 
 # using the CRISPY_TEMPLATE_PACK Django settings variable:
-CRISPY_TEMPLATE_PACK = 'bootstrap'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 
 
