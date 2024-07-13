@@ -272,8 +272,15 @@ http://0.0.0.0:8000/
 http://0.0.0.0:8000/home
 
 
+# Add in config/urls.py
+urlpatterns = [
+    ...
+    path('accounts/', include('django.contrib.auth.urls')),
+    path('accounts/', include('accounts.urls')),
+]
 
-
+# CREATE in accounts/
+urls.py
 
 
 
