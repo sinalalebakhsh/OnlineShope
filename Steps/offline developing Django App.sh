@@ -218,7 +218,7 @@ git rm db.sqlite3 --cached
 
 docker-compose exec web python manage.py startapp pages
 
-# Add in config/setting.py 
+# Add in config/settings.py 
 INSTALLED_APPS = [ ... 
 'pages',
 ]
@@ -231,6 +231,32 @@ class HomePageView(TemplateView):
 class AboutUsPageView(TemplateView):
     template_name = 'pages/aboutus.html'
     
+
+# Create in current directory project
+templates/home.html
+
+# Add in config/settings.py
+TEMPLATES = [
+    {
+        ...
+        'DIRS': [str(BASE_DIR.joinpath('templates'))],
+        ...
+    }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
