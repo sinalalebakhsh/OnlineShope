@@ -461,3 +461,27 @@ pipenv install django-allauth
 pipenv requirements > requirements.txt
 
 
+
+# Add in config/settings.py
+INSTALLED_APPS = [
+    ...
+    'allauth',
+    'allauth.account',
+    ...
+]
+MIDDLEWARE = [
+    ...
+    # Add the account middleware:
+    "allauth.account.middleware.AccountMiddleware",
+]
+# For allauth Package                          --------------->>>> SINA 
+AUTHENTICATION_BACKENDS = [
+    # Needed to login by username in Django admin, regardless of `allauth`
+    'django.contrib.auth.backends.ModelBackend',
+
+    # `allauth` specific authentication methods, such as login by email
+    'allauth.account.auth_backends.AuthenticationBackend',
+]
+SITE_ID = 1
+
+
