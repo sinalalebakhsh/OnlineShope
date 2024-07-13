@@ -402,3 +402,32 @@ _base.html
 
 
 # Change templates/registration/login.html
+{% extends '_base.html' %}
+{% block page_title %}
+    Login
+{% endblock %}
+{% block content %}
+    <h1>Login</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Login">
+    </form>
+{% endblock %}
+
+
+# Add in config/settings.py
+CRISPY_TEMPLATE_PACK = 'uni_form'
+
+
+
+
+
+
+
+
+
+
+
+
+
