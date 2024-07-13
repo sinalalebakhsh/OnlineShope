@@ -267,6 +267,10 @@ urlpatterns = [
 ]
 
 # TEST WebApp
+http://0.0.0.0:8000/aboutus
+http://0.0.0.0:8000/
+http://0.0.0.0:8000/home
+
 
 
 
