@@ -431,7 +431,18 @@ CRISPY_TEMPLATE_PACK = 'bootstrap'
 {% load crispy_forms_tags %}
 ...
 
+# Changes templates/registration/signup.html
+...
+        {{ form|crispy }}
+...
 
+
+
+
+# Changes templates/registration/login.html
+...
+        {{ form|crispy }}
+...
 
 
 
