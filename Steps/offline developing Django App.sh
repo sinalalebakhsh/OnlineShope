@@ -304,6 +304,9 @@ registration/signup.html
 registration/login.html
 
 
+# Add in templates/login/signup.html
+
+# Add in templates/registration/signup.html
 
 
 
