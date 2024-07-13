@@ -417,7 +417,7 @@ _base.html
 
 
 # Add in config/settings.py
-CRISPY_TEMPLATE_PACK = 'uni_form'
+CRISPY_TEMPLATE_PACK = 'bootstrap'
 
 
 
