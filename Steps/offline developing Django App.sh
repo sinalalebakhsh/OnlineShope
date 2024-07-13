@@ -248,6 +248,12 @@ TEMPLATES = [
 templates/pages/aboutus.html
 
 
+# Add in config/urls.py
+from django.urls import path, include
+urlpatterns = [
+    ...
+    path('', include('pages.urls')),
+]
 
 
 
