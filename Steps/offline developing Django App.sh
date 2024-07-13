@@ -486,3 +486,20 @@ SITE_ID = 1
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
+
+
+
+# Change config/urls.py
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('pages.urls')),
+    path('home/', include('pages.urls')),
+    path('accounts/', include('allauth.urls')),
+]
+
+# RENAME templates/registration directory to
+account
+
+
+
+
