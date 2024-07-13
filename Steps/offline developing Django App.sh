@@ -386,7 +386,19 @@ _base.html
 
 
 # Change templates/registration/signup.html
+{% extends '_base.html' %}
+{% block page_title %}
+    Signup
+{% endblock %}
+{% block content %}
+    <h1>Signup</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Signup">
+    </form>
+{% endblock %}
 
 
 
-
+# Change templates/registration/login.html
