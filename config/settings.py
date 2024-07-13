@@ -144,6 +144,12 @@ LOGOUT_REDIRECT_URL = 'home'
 
 
 
+# You can set your default template pack for your project 
+# using the CRISPY_TEMPLATE_PACK Django settings variable:
+CRISPY_TEMPLATE_PACK = 'uni_form'
+
+
+
 
 
 
