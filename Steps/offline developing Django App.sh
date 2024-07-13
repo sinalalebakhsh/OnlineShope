@@ -353,6 +353,9 @@ INSTALLED_APPS = [
 
 ]
 
+# CREATE in templates/
+_base.html
+
 
 
 
