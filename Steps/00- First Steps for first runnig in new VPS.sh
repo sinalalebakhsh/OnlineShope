@@ -26,3 +26,7 @@ docker pull nginx:latest
 
 apt install python3-pip
 pip install --upgrade pip
+pip --version
+# Output:
+    pip 22.0.2 from /usr/lib/python3/dist-packages/pip (python 3.10)
+    
