@@ -11,3 +11,6 @@ DJANGO_DEBUG=True
 
 apt install python3-pip
 pip install --upgrade pip
+
+
+docker-compose up --build

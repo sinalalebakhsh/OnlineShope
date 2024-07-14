@@ -29,4 +29,14 @@ pip install --upgrade pip
 pip --version
 # Output:
     pip 22.0.2 from /usr/lib/python3/dist-packages/pip (python 3.10)
-    
+
+
+nano config/settings.py
+
+ALLOWED_HOSTS = ['154.16.16.239']
+
+
+
+docker-compose up --build -d
+
+docker-compose exec web  pip install --upgrade pip
