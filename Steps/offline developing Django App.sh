@@ -537,3 +537,12 @@ logout.html
     </div>
 {% endblock %}
 
+
+# migrate
+docker-compose exec web python manage.py migrate
+# Output:
+    Operations to perform:
+      Apply all migrations: account, accounts, admin, auth, contenttypes, sessions
+    Running migrations:
+      No migrations to apply.
+

@@ -36,7 +36,9 @@ nano config/settings.py
 ALLOWED_HOSTS = ['154.16.16.239']
 
 
-
 docker-compose up --build -d
-
+# upgrade
 docker-compose exec web  pip install --upgrade pip
+# migrate
+docker-compose exec web python manage.py migrate
+
