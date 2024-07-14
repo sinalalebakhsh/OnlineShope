@@ -16,3 +16,4 @@ docker-compose exec web python manage.py migrate
 
 # For create super user
 docker-compose exec web python manage.py createsuperuser
+
