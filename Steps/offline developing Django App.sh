@@ -575,3 +575,6 @@ DATABASES = {
     }
 }
 
+# Install
+pipenv install psycopg2-binary
+pipenv requirements > requirements.txt
