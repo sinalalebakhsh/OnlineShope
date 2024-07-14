@@ -562,5 +562,16 @@ pipenv requirements > requirements.txt
 # Add in docker-compose.yml
     depends_on:
       - db
-    environment:
-      - "DJANGO_SECRET_KEY=WXXXXWWXWXXWXWWXXWXWXWXWXWXWXXXXXXX"
+    
+# Change config/settings.py
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': 'db',
+        'PORT': '5432',
+    }
+}
+
