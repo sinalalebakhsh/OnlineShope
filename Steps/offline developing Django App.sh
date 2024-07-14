@@ -511,6 +511,10 @@ accounts/urls.py
 
 
 # Add in config.settings.py
+ACCOUNT_SESSION_REMEMBER = True
+
+
+
 
 
 

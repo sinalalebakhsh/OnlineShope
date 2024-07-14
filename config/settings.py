@@ -168,4 +168,9 @@ AUTHENTICATION_BACKENDS = [
 ]
 SITE_ID = 1
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+ACCOUNT_SESSION_REMEMBER = True
+
+
+
+
 
