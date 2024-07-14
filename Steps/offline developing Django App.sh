@@ -515,6 +515,25 @@ ACCOUNT_SESSION_REMEMBER = True
 
 
 
-
-
+# CREATE in templates/account
+logout.html
+# content logout.html
+{% extends '_base.html' %}
+{% load crispy_forms_tags %}
+{% block page_title %}
+    Logout
+{% endblock %}
+{% block content %}
+    <div>
+        <h1>Logout</h1>
+        <br>
+        <h4>Do You want to logout?</h4>
+        <br>
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <input type="submit" value="Logout">
+        </form>
+    </div>
+{% endblock %}
 
