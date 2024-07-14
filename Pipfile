@@ -9,6 +9,7 @@ environs = "*"
 django-crispy-forms = "*"
 crispy-bootstrap4 = "*"
 django-allauth = "*"
+django-environ = "*"
 
 [dev-packages]
 

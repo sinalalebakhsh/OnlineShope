@@ -23,3 +23,5 @@ docker-compose exec web  pip install --upgrade pip && docker-compose exec web py
 # OR
 ./After_each_Lunch.sh
 
+# CREATE super user
+docker-compose exec web python manage.py createsuperuser

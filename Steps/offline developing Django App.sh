@@ -554,3 +554,7 @@ docker-compose exec web python manage.py migrate
 
 
 
+# Install
+pipenv install django-environ
+ pipenv requirements > requirements.txt 
+ 
