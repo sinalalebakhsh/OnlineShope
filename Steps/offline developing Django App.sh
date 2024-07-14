@@ -557,3 +557,10 @@ docker-compose exec web python manage.py migrate
 # Install
 pipenv install django-environ
 pipenv requirements > requirements.txt 
+
+
+# Add in docker-compose.yml
+    depends_on:
+      - db
+    environment:
+      - "DJANGO_SECRET_KEY=WXXXXWWXWXXWXWWXXWXWXWXWXWXWXXXXXXX"
