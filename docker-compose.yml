@@ -10,6 +10,8 @@ services:
       - 8000:8000
     depends_on:
       - db
+    env_file:
+      - .env
   pgadmin:
     image: dpage/pgadmin4
     environment:
@@ -19,6 +21,8 @@ services:
       - "8080:80"
     depends_on:
       - db
+    env_file:
+      - .env
 
   db:
     image: postgres:14
