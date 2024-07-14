@@ -512,6 +512,7 @@ accounts/urls.py
 
 # Add in config.settings.py
 ACCOUNT_SESSION_REMEMBER = True
+ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = False
 
 
 
@@ -545,4 +546,7 @@ docker-compose exec web python manage.py migrate
       Apply all migrations: account, accounts, admin, auth, contenttypes, sessions
     Running migrations:
       No migrations to apply.
+
+
+
 
