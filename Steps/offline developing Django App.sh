@@ -611,3 +611,11 @@ docker pull dpage/pgadmin4
       - "5432:5432"
 
 
+
+# Change this in docker-compose.yml
+#   pgadmin:
+#     image: dpage/pgadmin4
+#     environment:
+        PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
+        PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
+
