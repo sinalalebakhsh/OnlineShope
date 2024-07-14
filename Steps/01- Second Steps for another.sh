@@ -8,9 +8,14 @@ DJANGO_DEBUG=False
 DJANGO_DEBUG=True
 
 
-
 apt install python3-pip
 pip install --upgrade pip
 
+nano config/settings.py
+ALLOWED_HOSTS = ['154.16.16.239']
 
-docker-compose up --build
+
+
+docker-compose up --build -d
+docker-compose exec web  pip install --upgrade pip
+

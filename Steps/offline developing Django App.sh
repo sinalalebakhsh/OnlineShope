@@ -510,5 +510,7 @@ account
 accounts/urls.py
 
 
+# Add in config.settings.py
+
 
 
