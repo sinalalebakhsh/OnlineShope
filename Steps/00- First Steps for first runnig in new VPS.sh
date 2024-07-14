@@ -23,6 +23,9 @@ docker pull postgres:14
 
 docker pull nginx:latest
 
+docker pull dpage/pgadmin4
+
+
 
 apt install python3-pip
 pip install --upgrade pip

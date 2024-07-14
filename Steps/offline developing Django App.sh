@@ -578,3 +578,36 @@ DATABASES = {
 # Install
 pipenv install psycopg2-binary
 pipenv requirements > requirements.txt
+
+docker pull dpage/pgadmin4
+
+
+# Add in docker-compose.yml
+# version: '3.9'
+# services:
+#   web:
+#     build: .
+#     command: sh -c "pip --version && pip install --upgrade pip && python manage.py makemigrations && python manage.py migrate && python /code/manage.py runserver 0.0.0.0:8000"
+#     volumes:
+#       - .:/code
+#     ports:
+#       - 8000:8000
+#     depends_on:
+#       - db
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@example.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+#   db:
+#     image: postgres:14
+#     environment:
+#       - "POSTGRES_HOST_AUTH_METHOD=trust"
+    ports:
+      - "5432:5432"
+
+
