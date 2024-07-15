@@ -1,18 +1,25 @@
-{% extends '_base.html' %}
-{% load crispy_forms_tags %}
-{% block page_title %}
-    Logout
-{% endblock %}
+{% extends "_base_for_email.html" %}
+{% load allauth i18n %}
+{% block head_title %}
+    {% trans "Sign Out" %}
+{% endblock head_title %}
 {% block content %}
-    <div>
-        <h1>Logout</h1>
-        <br>
-        <h4>Do You want to logout?</h4>
-        <br>
-        <form action="" method="POST">
+    {% element h1 %}
+        {% trans "Sign Out" %}
+    {% endelement %}
+    {% element p %}
+        {% trans 'Are you sure you want to sign out?' %}
+    {% endelement %}
+    {% url 'account_logout' as action_url %}
+    {% element form method="post" action=action_url no_visible_fields=True %}
+        {% slot body %}
             {% csrf_token %}
-            {{ form|crispy }}
-            <input type="submit" value="Logout">
-        </form>
-    </div>
-{% endblock %}
+            {{ redirect_field }}
+        {% endslot %}
+        {% slot actions %}
+            {% element button type="submit" %}
+                {% trans 'Sign Out' %}
+            {% endelement %}
+        {% endslot %}
+    {% endelement %}
+{% endblock content %}
