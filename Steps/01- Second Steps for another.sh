@@ -1,5 +1,4 @@
-touch .env
-
+# Copy and Paste data to .env manualy
 nano .env
 # Copy and Paste in .env
 DJANGO_SECRET_KEY='XXXXXXXXXXXXXXXXXx'
@@ -17,7 +16,11 @@ ALLOWED_HOSTS = ['154.16.16.239']
 
 
 docker-compose up --build -d
+
+
 # upgrade
+docker-compose exec web  pip install --upgrade pip
+
 # migrate
 docker-compose exec web  pip install --upgrade pip && docker-compose exec web python manage.py migrate
 # OR
