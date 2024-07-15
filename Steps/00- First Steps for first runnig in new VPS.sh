@@ -26,6 +26,9 @@ docker pull nginx:latest
 docker pull dpage/pgadmin4
 
 
+docker pull mailhog/mailhog
+# OR
+docker pull maildev/maildev
 
 apt install python3-pip
 pip install --upgrade pip
