@@ -685,7 +685,7 @@ class Product(models.Model):
     dateTime_modified = models.DateTimeField(auto_now=True)
 
 
-
+docker-compose exec web python manage.py makemigrations products
 
 
 
