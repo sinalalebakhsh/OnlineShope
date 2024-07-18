@@ -26,8 +26,6 @@ docker-compose exec web  pip install --upgrade pip
 
 # migrate
 docker-compose exec web  pip install --upgrade pip && docker-compose exec web python manage.py migrate
-# OR
-./After_each_Lunch.sh
 
 # CREATE super user
 docker-compose exec web python manage.py createsuperuser
