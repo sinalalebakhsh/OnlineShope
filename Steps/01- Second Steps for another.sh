@@ -15,6 +15,9 @@ ALLOWED_HOSTS = ['154.16.16.239']
 
 
 
+docker-compose up --build
+# IF don't any error
+# Ctrl + C and than again with detach
 docker-compose up --build -d
 
 
