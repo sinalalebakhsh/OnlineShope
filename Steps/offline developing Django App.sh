@@ -698,7 +698,8 @@ class ProductsListView(generic.ListView):
     context_object_name = 'products'
 
 
-
+# CREATE in products directory
+templates/products/products_list.html
 
 
 
