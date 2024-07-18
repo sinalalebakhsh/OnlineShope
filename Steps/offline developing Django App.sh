@@ -671,6 +671,8 @@ docker-compose exec web python manage.py migrate --fake-initial
 
 docker-compose exec web python manage.py startapp products
 
+# add in config/settings.py -> INSTALLED_APPS [...]
+
 
 
 

@@ -51,8 +51,9 @@ INSTALLED_APPS = [
     'allauth.account',
 
     # APPs
-    'accounts',
-    'pages',
+    'accounts.apps.AccountsConfig',
+    'pages.apps.PagesConfig',
+    'products.apps.ProductsConfig',
 ]
 
 MIDDLEWARE = [
@@ -97,11 +98,11 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': env.str("POSTGRES_DB", default="postgres"),
-        'USER': env.str("POSTGRES_USER", default="postgres"),
-        'PASSWORD': env.str("POSTGRES_PASSWORD", default="postgres"),
-        'HOST': env.str("POSTGRES_HOST", default="db"),
-        'PORT': env.str("POSTGRES_PORT", default="5432"),
+        'NAME': env.str("POSTGRES_DB" ),
+        'USER': env.str("POSTGRES_USER"),
+        'PASSWORD': env.str("POSTGRES_PASSWORD"),
+        'HOST': env.str("POSTGRES_HOST"),
+        'PORT': env.str("POSTGRES_PORT"),
     }
 }
 
@@ -163,7 +164,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 
 
-# For allauth Package                          ==============>>>> SINA 
+# For allauth Package 
 AUTHENTICATION_BACKENDS = [
     # Needed to login by username in Django admin, regardless of `allauth`
     'django.contrib.auth.backends.ModelBackend',
@@ -171,8 +172,11 @@ AUTHENTICATION_BACKENDS = [
     # `allauth` specific authentication methods, such as login by email
     'allauth.account.auth_backends.AuthenticationBackend',
 ]
+
 SITE_ID = 1
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
 ACCOUNT_SESSION_REMEMBER = True
 ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = False
 ACCOUNT_USERNAME_REQUIRED = False
@@ -182,6 +186,6 @@ ACCOUNT_UNIQUE_EMAIL = True
 
 
 
-EMAIL_HOST = 'smtp-server'  # Your Mailhog Host
-EMAIL_PORT = '1025'
+# EMAIL_HOST = 'smtp-server'  # Your Mailhog Host
+# EMAIL_PORT = '1025'
 
