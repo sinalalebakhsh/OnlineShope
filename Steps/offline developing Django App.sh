@@ -668,5 +668,14 @@ docker-compose exec web python manage.py migrate --fake-initial
     #   Applying admin.0003_logentry_add_action_flag_choices... OK
     #   Applying sessions.0001_initial... OK
     
-    
+
+docker-compose exec web python manage.py startapp products
+
+
+
+
+
+
+
+
 
