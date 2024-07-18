@@ -700,7 +700,14 @@ class ProductsListView(generic.ListView):
 
 # CREATE in products directory
 templates/products/products_list.html
-
+# Content of templates/products/products_list.html
+{% extends '_base.html' %}
+{% block page_title %}
+    Products
+{% endblock %}
+{% block content %}
+    <H1>Product List</H1>
+{% endblock %}
 
 
 
