@@ -715,6 +715,11 @@ templates/products/products_list.html
 # CREATE in products
 urls.py
 # Content of products/urls.py
+from django.urls import path
+from .views import ProductsListView
+urlpatterns = [
+    path('', ProductsListView.as_view(), name='product_list'),
+]
 
 
 
