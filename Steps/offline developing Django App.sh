@@ -712,3 +712,9 @@ templates/products/products_list.html
 
 
 
+# CREATE in products
+urls.py
+# Content of products/urls.py
+
+
+
