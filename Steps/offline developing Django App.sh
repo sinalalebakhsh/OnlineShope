@@ -686,6 +686,8 @@ class Product(models.Model):
 
 
 docker-compose exec web python manage.py makemigrations products
+docker-compose exec web python manage.py migrate
+
 
 
 
