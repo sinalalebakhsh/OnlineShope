@@ -789,6 +789,14 @@ class ProductDetailView(generic.DetailView):
 
 # CREATE in products/templates/products/product_detail.html
 product_detail.html
-
+# content of product_detail.html
+{% extends '_base.html' %}
+{% block page_title %}
+    Product Detail
+{% endblock %}
+{% block content %}
+    <h1>{{ product.title }}</h1>
+    <p>{{ product.description}}</p>
+{% endblock %}
 
 
