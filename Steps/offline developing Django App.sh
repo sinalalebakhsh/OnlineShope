@@ -757,6 +757,8 @@ http://0.0.0.0:8000/admin/products/product/
 # add in products/models -> class Product
     def __str__(self):
         return self.title
+# Check this link
+http://0.0.0.0:8000/admin/products/product/
     
     
 
