@@ -25,7 +25,8 @@ docker-compose up --build -d
 docker-compose exec web  pip install --upgrade pip
 
 # migrate
-docker-compose exec web  pip install --upgrade pip && docker-compose exec web python manage.py migrate
+docker-compose exec web python manage.py makemigrations
+docker-compose exec web python manage.py migrate
 
 # CREATE super user
 docker-compose exec web python manage.py createsuperuser
