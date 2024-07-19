@@ -13,9 +13,9 @@
 <body>
 
     {% if user.is_authenticated %}
-    <a href="{% url 'home' %}">Home</a> | {{ user.email }} | <a href="{% url 'account_logout' %}">Logout</a> 
+    <a href="{% url 'home' %}">Home</a> | <a href="{% url 'product_list' %}">Product</a> | {{ user.email }} | <a href="{% url 'account_logout' %}">Logout</a> 
     {% else %}
-       <a href="{% url 'home' %}">Home</a> | <a href="{% url 'account_login' %}">Login</a> | <a href="{% url 'account_signup' %}">Signup</a>
+       <a href="{% url 'home' %}">Home</a> | <a href="{% url 'product_list' %}">Product</a> | <a href="{% url 'account_login' %}">Login</a> | <a href="{% url 'account_signup' %}">Signup</a>
     {% endif%}
 
     {% block content %}{% endblock %}
