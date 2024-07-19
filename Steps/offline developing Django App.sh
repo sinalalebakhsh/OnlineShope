@@ -815,7 +815,12 @@ from .views import ProductDetailView
 urlpatterns = [
     ...
     path('<int:pk>/', ProductDetailView.as_view(), name='product_detail'),
-
+# Check this link and tag link products
+http://0.0.0.0:8000/products/
+http://0.0.0.0:8000/products/1/
+http://0.0.0.0:8000/products/2/
+http://0.0.0.0:8000/products/3/
+http://0.0.0.0:8000/products/.../ # should have arise an error because don't have 
 
 
 
