@@ -808,3 +808,14 @@ product_detail.html
     </a>
 {% endfor %}
 
+
+
+# add in products/urls.py
+from .views import ProductDetailView
+urlpatterns = [
+    ...
+    path('<int:pk>/', ProductDetailView.as_view(), name='product_detail'),
+
+
+
+
