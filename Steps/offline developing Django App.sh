@@ -837,7 +837,8 @@ class Product(models.Model):
 
 # Add in config/settings.py
 import os
-
+# under STATIC_URL = 'static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
 
 
 
