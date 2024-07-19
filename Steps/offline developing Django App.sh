@@ -800,3 +800,11 @@ product_detail.html
 {% endblock %}
 
 
+
+# Change in product_list.html
+{% for product in products %}
+    <a href="">
+        <h1>{{ product.title }}</h1>
+    </a>
+{% endfor %}
+
