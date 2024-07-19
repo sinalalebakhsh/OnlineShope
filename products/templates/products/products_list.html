@@ -54,7 +54,7 @@
                                                         </figure>
                                                         <div class="product-info">
                                                             <h3 class="product-title mb--15">
-                                                                <a href="product-details.html">{{ product.title }}</a>
+                                                                <a href="{{ product.get_absolute_url }}">{{ product.title }}</a>
                                                             </h3>
                                                             <div class="product-price-wrapper mb--30">
                                                                 <span class="money">{{ product.price }} تومان</span>
