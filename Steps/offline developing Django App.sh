@@ -773,6 +773,7 @@ http://0.0.0.0:8000/admin/products/product/
 class ProductsListView(generic.ListView):
     # model = Product
     queryset = Product.objects.filter(active=True)
-
+# Check this link
+http://0.0.0.0:8000/products/
 
 
