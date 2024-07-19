@@ -5,14 +5,11 @@
 {% endblock %}
 
 {% block content %}
-    <H1>Product List</H1>
-    {% for product in products %}
-        <a href="{{ product.get_absolute_url }}">
-            <h1>{{ product.title }}</h1>
-        </a>
-    {% endfor %}
 
 
+<body dir='rtl'>
+
+   
     <!-- Main Wrapper Start -->
     <div class="wrapper">
         <!-- Header Start -->
@@ -340,5 +337,8 @@
 
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
+
+</body>
+
 
 {% endblock %}
