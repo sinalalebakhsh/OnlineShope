@@ -841,4 +841,14 @@ import os
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
 
 
+# CREATE static directory in current directory project
+static
+# Create in statice directory css directory
+css
+# Add in static/css/ all css files
+_base.css
+main.css
+vendor.vss
+
+
 
