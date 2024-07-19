@@ -739,4 +739,6 @@ urlpatterns = [
         {{ product.title }}
     {% endfor %}
 
+# Add in products/admin.py
+
 
