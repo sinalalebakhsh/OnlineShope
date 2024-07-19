@@ -803,7 +803,7 @@ product_detail.html
 
 # Change in product_list.html
 {% for product in products %}
-    <a href="">
+    <a href="{{ product.get_absolute_url }}">
         <h1>{{ product.title }}</h1>
     </a>
 {% endfor %}
