@@ -23,10 +23,10 @@ docker-compose up --build -d
 
 # upgrade
 docker-compose exec web  pip install --upgrade pip
-
 # migrate
 docker-compose exec web python manage.py makemigrations
 docker-compose exec web python manage.py migrate
-
 # CREATE super user
 docker-compose exec web python manage.py createsuperuser
+docker-compose exec web python manage.py migrate --fake sessions zero
+docker-compose exec web python manage.py migrate --fake-initial
