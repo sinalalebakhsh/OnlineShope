@@ -780,3 +780,15 @@ http://0.0.0.0:8000/products/
 
 
 
+# Add in products/views.py
+
+class ProductDetailView(generic.DetailView):
+    model = Product
+    template_name = 'products/product_detail.html'
+    context_object_name = 'prodduct'
+
+
+
+
+
+
