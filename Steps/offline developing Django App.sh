@@ -747,5 +747,11 @@ class ProductAdmin(admin.ModelAdmin):
     pass
 
 
+# CREATE SuperUser again if delete last dockerfile
+docker-compose exec web python manage.py createsuperuser
+
+# Check this link
+http://0.0.0.0:8000/admin/products/product/
+
 
 
