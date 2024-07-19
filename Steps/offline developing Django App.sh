@@ -761,4 +761,8 @@ http://0.0.0.0:8000/admin/products/product/
 http://0.0.0.0:8000/admin/products/product/
     
     
+# Change in products/admin.py -> class ProductAdmin
+class ProductAdmin(admin.ModelAdmin):
+    list_display = ['title', 'price', 'active', ]
+
 
