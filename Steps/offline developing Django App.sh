@@ -754,3 +754,6 @@ http://0.0.0.0:8000/admin/products/product/
 #  Create 3 Products for Test
 
 
+# add in products/models -> class Product
+
+
