@@ -6,4 +6,9 @@
 
 {% block content %}
     <H1>Product List</H1>
+
+    {% for product in products %}
+        {{ product.title }}
+    {% endfor %}
+
 {% endblock %}

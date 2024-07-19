@@ -724,5 +724,19 @@ urlpatterns = [
 
 
 # Add in config/urls.py
+from django.urls import path
+from .views import ProductsListView
+urlpatterns = [
+    path('', ProductsListView.as_view(), name='product_list'),
+]
+
+
+# Add in products/templates/products/products_list.html
+{% block content %}
+    <H1>Product List</H1>
+
+    {% for product in products %}
+        {{ product.title }}
+    {% endfor %}
 
 
