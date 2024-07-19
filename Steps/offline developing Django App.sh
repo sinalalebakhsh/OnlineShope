@@ -824,3 +824,14 @@ http://0.0.0.0:8000/products/.../ # should have arise an error because don't hav
 
 
 
+
+
+# Add in products/urls.py
+from django.shortcuts import reverse
+class Product(models.Model):
+    ...
+    def get_absolute_url(self):
+        return reverse('product_detail', args=[self.pk])
+
+
+
