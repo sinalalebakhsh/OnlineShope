@@ -835,3 +835,8 @@ class Product(models.Model):
 
 
 
+# Add in config/settings.py
+
+
+
+
