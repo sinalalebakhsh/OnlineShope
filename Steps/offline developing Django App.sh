@@ -809,28 +809,25 @@ vendor.vss
 
 
 # add in _base.html
+{% load static %}
 <head>
     ...
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>ShoppingYar</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicons -->
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="assets/img/icon.png">
-
     <!-- ************************* CSS Files ************************* -->
-
-    <link rel="stylesheet" href="assets/css/_base.css">
-
+    <link rel="stylesheet" href="{% static 'assets/css/_base.css' %}">
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="assets/css/vendor.css">
-
+    <link rel="stylesheet" href="{% static 'assets/css/vendor.css' %}">
     <!-- style css -->
-    <link rel="stylesheet" href="assets/css/main.css">
-
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
 </head>
 
-
+# Rebuild docker
+docker-compose down
+docker-compose up --build
 
