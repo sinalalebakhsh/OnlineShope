@@ -30,3 +30,4 @@ docker-compose exec web python manage.py migrate
 docker-compose exec web python manage.py createsuperuser
 docker-compose exec web python manage.py migrate --fake sessions zero
 docker-compose exec web python manage.py migrate --fake-initial
+
