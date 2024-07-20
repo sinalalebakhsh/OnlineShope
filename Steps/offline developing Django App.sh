@@ -837,5 +837,5 @@ docker-compose up --build
 from django.contrib.auth import get_user_model
 
 class Comment(models.Model):
-    author = models.ForeignKey()
+    author = models.ForeignKey(get_user_model, on_delete=models.CASCADE, related_name='comments',)
     body = models.TextField()

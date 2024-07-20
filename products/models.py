@@ -26,5 +26,5 @@ class Product(models.Model):
 
 
 class Comment(models.Model):
-    author = models.ForeignKey()
+    author = models.ForeignKey(get_user_model, on_delete=models.CASCADE, related_name='comments',)
     body = models.TextField()
