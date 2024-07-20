@@ -28,7 +28,7 @@ class ProductDetailView(generic.DetailView):
 
 class CommentCreateView(generic.CreateView):
     model = Comment
-    form = CommentForm
+    form_class = CommentForm
 
     def form_valid(self, form):
         obj = form.save(commit=False)

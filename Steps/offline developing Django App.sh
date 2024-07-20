@@ -930,7 +930,7 @@ from .models import Comment
 
 class CommentCreateView(generic.CreateView):
     model = Comment
-    form = CommentForm
+    form_class = CommentForm
 
     def form_valid(self, form):
         obj = form.save(commit=False)
@@ -941,6 +941,13 @@ class CommentCreateView(generic.CreateView):
         obj.product = product
 
         return super().form_valid(form)
+
+
+
+# Add in product_detail.html
+<span class="reply-title pull-right">نظر خود را بنویسید</span>
+<br>
+<form action="{% url 'comment_create' product.id %}" method="POST">
 
 
 
