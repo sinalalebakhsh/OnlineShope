@@ -902,6 +902,14 @@ class ProductDetailView(generic.DetailView):
 
 
 
+# Add in product_detail.html
+<span class="reply-title pull-right">نظر خود را بنویسید</span>
+<br>
+    {{ comment_form.as_p }}
+</div>
+
+
+
 
 
 
