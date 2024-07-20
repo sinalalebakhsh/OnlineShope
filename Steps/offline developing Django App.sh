@@ -845,7 +845,7 @@ class Comment(models.Model):
         ('5', 'Perfect'),
     ]
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='comments', )
-    author = models.ForeignKey(get_user_model, on_delete=models.CASCADE, related_name='comments',)
+    author = models.ForeignKey(get_user_model(), on_delete=models.CASCADE, related_name='comments',)
     body = models.TextField()
     stars = models.CharField(max_length=10, choices=PRODUCT_STARS)
 
@@ -857,6 +857,12 @@ class Comment(models.Model):
 
 
 
+# Rebuild docker
+docker-compose down
+docker-compose up --build
+# migrate
+docker-compose exec web python manage.py makemigrations
+docker-compose exec web python manage.py migrate
 
 
 
