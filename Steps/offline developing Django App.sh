@@ -835,7 +835,7 @@ docker-compose up --build
 
 # Add in products/models.py
 from django.contrib.auth import get_user_model
-
+# ...
 class Comment(models.Model):
     PRODUCT_STARS = [
         ('1', 'Very Bad'),
@@ -844,12 +844,15 @@ class Comment(models.Model):
         ('4', 'Good'),
         ('5', 'Perfect'),
     ]
-
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='comments', )
     author = models.ForeignKey(get_user_model, on_delete=models.CASCADE, related_name='comments',)
     body = models.TextField()
     stars = models.CharField(max_length=10, choices=PRODUCT_STARS)
 
+    datetime_created = models.DateTimeField(auto_now_add=True)
+    dateTime_modified = models.DateTimeField(auto_now=True)
 
+    active = models.BooleanField(default=True)
 
 
 
