@@ -126,38 +126,38 @@ Product Detail
                                         <h3 class="review__title">۱ نظر برای لباس تابستانی</h3>
                                         <ul class="review__list">
                                             {% for comment in product.comments.all %}
-                                                <li class="review__item">
-                                                    <div class="review__container">
-                                                        <div class="review__text">
-                                                            <div class="d-flex flex-sm-row flex-row">
-                                                                <img src="{% static 'img/others/comment-1.jpg' %}"
-                                                                    alt="Review Avatar" class="review__avatar">
-                                                                <div>
-                                                                    <div class="review__meta">
-                                                                        <strong class="review__author px-4">
-                                                                            {{ comment.author.username }}
-                                                                        </strong>
-                                                                        <span class="review__dash">-</span>
-                                                                        <span class="review__published-date">
-                                                                            {{ comment.datetime_created }}
-                                                                        </span>
-                                                                    </div>
-                                                                    <div class="product-rating">
-                                                                        <div class="m-0 star-rating star-five">
-                                                                            <span>Rated <strong class="rating">
+                                            <li class="review__item">
+                                                <div class="review__container">
+                                                    <div class="review__text">
+                                                        <div class="d-flex flex-sm-row flex-row">
+                                                            <img src="{% static 'img/others/comment-1.jpg' %}"
+                                                                alt="Review Avatar" class="review__avatar">
+                                                            <div>
+                                                                <div class="review__meta">
+                                                                    <strong class="review__author px-4">
+                                                                        {{ comment.author.username }}
+                                                                    </strong>
+                                                                    <span class="review__dash">-</span>
+                                                                    <span class="review__published-date">
+                                                                        {{ comment.datetime_created }}
+                                                                    </span>
+                                                                </div>
+                                                                <div class="product-rating">
+                                                                    <div class="m-0 star-rating star-five">
+                                                                        <span>Rated <strong class="rating">
                                                                                 {{ product.stars }}
                                                                             </strong>
-                                                                                out of 5</span>
-                                                                        </div>
+                                                                            out of 5</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <p class="review__description text-right px-4">
-                                                                {{ comment.body }}
-                                                            </p>
                                                         </div>
+                                                        <p class="review__description text-right px-4">
+                                                            {{ comment.body }}
+                                                        </p>
                                                     </div>
-                                                </li>
+                                                </div>
+                                            </li>
                                             {% endfor %}
                                         </ul>
                                         <div class="review-form-wrapper">
@@ -212,7 +212,7 @@ Product Detail
     </div>
     <!-- Main Content Wrapper End -->
 
-   
+
     <!-- Search form Popup Start -->
     <div class="searchform__popup" id="searchForm">
         <a href="#" class="btn-close"><i class="flaticon flaticon-cross"></i></a>
