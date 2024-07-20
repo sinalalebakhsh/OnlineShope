@@ -831,3 +831,6 @@ vendor.vss
 docker-compose down
 docker-compose up --build
 
+
+
+# Add in products/models.py
