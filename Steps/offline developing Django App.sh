@@ -834,3 +834,8 @@ docker-compose up --build
 
 
 # Add in products/models.py
+from django.contrib.auth import get_user_model
+
+class Comment(models.Model):
+    author = models.ForeignKey()
+    body = models.TextField()

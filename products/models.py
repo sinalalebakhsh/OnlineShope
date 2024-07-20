@@ -1,5 +1,7 @@
 from django.db import models
 from django.shortcuts import reverse
+from django.contrib.auth import get_user_model
+
 
 class Product(models.Model):
     title = models.CharField(max_length=100)
@@ -23,3 +25,6 @@ class Product(models.Model):
 
 
 
+class Comment(models.Model):
+    author = models.ForeignKey()
+    body = models.TextField()
