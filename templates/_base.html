@@ -83,9 +83,21 @@
                                     <i class="flaticon flaticon-user"></i>
                                 </a>
                                 <ul class="user-info-menu">
-                                    <li>
-                                        <a class="text-right" href="my-account.html">حساب کاربری</a>
-                                    </li>
+                                    {% if user.is_authenticated %}
+                                        <li>
+                                            <a class="text-right" href="#">حساب کاربری</a>
+                                        </li>
+                                        <li>
+                                            <a class="text-right" href="{% url 'account_logout'%}">خروج</a>
+                                        </li>
+                                    {% else %}
+                                        <li>
+                                            <a class="text-right" href="{% url 'account_signup' %}">ثبت‌نام</a>
+                                        </li>
+                                        <li>
+                                            <a class="text-right" href="{% url 'account_login' %}">ورود</a>
+                                        </li>
+                                    {% endif %}
                                     <li>
                                         <a class="text-right" href="cart.html">سبد خرید</a>
                                     </li>
