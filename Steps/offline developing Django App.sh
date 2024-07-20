@@ -951,5 +951,11 @@ class CommentCreateView(generic.CreateView):
 
 
 
+# Add in products/models.py -> class Comment
+class Comment(models.Model):
+    ...
+    ...
+    def get_absolute_url(self):
+        return reverse('product_detail', args=[self.product.id])
 
 
