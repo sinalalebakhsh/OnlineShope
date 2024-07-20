@@ -164,7 +164,12 @@ Product Detail
                                                 <div class="col-lg-8 m-auto">
                                                     <span class="reply-title pull-right">نظر خود را بنویسید</span>
                                                     <br>
-                                                    {{ comment_form.as_p }}
+                                                    <form action="" method="POST">
+                                                        {% csrf_token %}
+                                                        {{ comment_form.as_p }}
+                                                        <input type="submit" value="ارسال">
+                                                    </form>
+                                                    
                                                 </div>
                                             </div>
                                         </div>

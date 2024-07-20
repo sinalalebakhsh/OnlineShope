@@ -903,11 +903,11 @@ class ProductDetailView(generic.DetailView):
 
 
 # Add in product_detail.html
-<span class="reply-title pull-right">نظر خود را بنویسید</span>
-<br>
+<form action="" method="POST">
+    {% csrf_token %}
     {{ comment_form.as_p }}
-</div>
-
+    <input type="submit" value="ارسال">
+</form>
 
 
 
