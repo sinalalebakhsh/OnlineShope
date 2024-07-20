@@ -2,6 +2,8 @@ from django.views import generic
 
 
 from .models import Product
+from .forms import CommentForm
+
 
 # CBV is stand for -> Class-based View
 class ProductsListView(generic.ListView): 
@@ -15,5 +17,16 @@ class ProductDetailView(generic.DetailView):
     model = Product
     template_name = 'products/product_detail.html'
     context_object_name = 'product'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['comment_form'] = CommentForm()
+        return context
+
+
+
+
+
+
 
 

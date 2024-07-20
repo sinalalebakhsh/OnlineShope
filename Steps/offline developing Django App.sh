@@ -890,7 +890,15 @@ class CommentForm(forms.ModelForm):
         model = Comment
         fields = ['body', 'stars', ]
 
-
+# Add in products/views.py -> class ProductDetailView
+from .forms import CommentForm
+class ProductDetailView(generic.DetailView):
+    ...
+    ...
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['comment_form'] = CommentForm()
+        return context
 
 
 
