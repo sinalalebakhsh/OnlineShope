@@ -141,22 +141,14 @@ Product Detail
                                                                     <strong class="review__author px-4">
                                                                         {{ comment.author.username }}
                                                                     </strong>
+                                                                    <div class="m-0 star-rating star-five"></div>
                                                                 </div>
                                                                 <div class="product-rating">
-                                                                    <div class="m-0 star-rating star-five">
-                                                                        <span>Rated
-                                                                            <strong class="rating">
-                                                                                {{ product.stars }}
-                                                                            </strong>
-                                                                            out of 5
-                                                                        </span>
-                                                                    </div>
+                                                                    <span class="review__description text-right px-4">Rated<strong class="rating"> {{ comment.stars }} </strong>out of 5</span>
+                                                                    <p class="review__description text-right px-4">{{ comment.body }}</p>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <p class="review__description text-right px-4">
-                                                            {{ comment.body }}
-                                                        </p>
                                                     </div>
                                                 </div>
                                             </li>
