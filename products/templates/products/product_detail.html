@@ -167,7 +167,7 @@ Product Detail
                                                     <br>
                                                     <form action="" method="POST">
                                                         {% csrf_token %}
-                                                        {{ comment_form.as_p }}
+                                                        {{ comment_form|crispy }}
                                                         <input type="submit" value="ارسال">
                                                     </form>
                                                     

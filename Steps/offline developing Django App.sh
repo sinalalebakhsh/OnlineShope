@@ -906,7 +906,7 @@ class ProductDetailView(generic.DetailView):
 {% load crispy_forms_tags %}
 <form action="" method="POST">
     {% csrf_token %}
-    {{ comment_form.as_p }}
+    {{ comment_form|crispy }}
     <input type="submit" value="ارسال">
 </form>
 # Check this link for comment posting
