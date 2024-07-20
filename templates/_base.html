@@ -38,7 +38,7 @@
                     <div class="col-xl-9 col-lg-8 col-5 col-xs-0 col-none col-sm-block p-0">
                         <nav class="main-navigation">
                             <div class="site-branding" style="margin-right: 30px;">
-                                <a href="{% static 'img/icon.png' %}" class="logo">
+                                <a href="{% url 'home' %}" class="logo">
                                     <figure class="logo--normal d-none d-sm-block">
                                         <img class="px-5" src="{% static 'img/SINA-min.jpg' %}" style="max-height: 50px; margin-bottom: -15px;" alt="Logo">
                                     </figure>
@@ -117,6 +117,37 @@
 
 
     {% block content %}{% endblock %}
+
+
+       <!-- Footer Start-->
+       <footer class="footer">
+        <div class="footer-top bg-color ptb--50" data-bg-color="#f6f6f6">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9 text-center">
+                        <div class="footer-widget mb--50">
+                            <div class="textwidget">
+                                <img class="px-5" src="{% static 'img/SINA-min.jpg' %}" style="max-height: 50px; margin-bottom: -15px;" alt="Logo">
+                            </div>
+                        </div>
+                        <div class="footer-widget mb--50 pb--1">
+                            <ul class="footer-menu">
+                                <li><a href="">درباره ما</a></li>
+                                <li><a href="">قوانین و مقررات</a></li>
+                                <li><a href="">تماس با ما</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-widget">
+                            SinaLalehbakhsh © | all rights reserved
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End-->
+
+
 
     <!-- ************************* JS Files ************************* -->
 
