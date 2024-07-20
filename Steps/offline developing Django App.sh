@@ -837,5 +837,20 @@ docker-compose up --build
 from django.contrib.auth import get_user_model
 
 class Comment(models.Model):
+    PRODUCT_STARS = [
+        ('1', 'Very Bad'),
+        ('2', 'Bad'),
+        ('3', 'Normal'),
+        ('4', 'Good'),
+        ('5', 'Perfect'),
+    ]
+
     author = models.ForeignKey(get_user_model, on_delete=models.CASCADE, related_name='comments',)
     body = models.TextField()
+    stars = models.CharField(max_length=10, choices=PRODUCT_STARS)
+
+
+
+
+
+
