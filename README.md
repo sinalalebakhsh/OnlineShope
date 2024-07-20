@@ -7,15 +7,15 @@
 
 
 
-Django Project WebApp[Django Project WebApp]
+[Django Project WebApp]
 
 <br>
 
-pdAdmin DataBase[pdAdmin DataBase] 
+[pdAdmin DataBase] 
 
 <br>
 
-Sample Products Page[Sample Products Page]
+[Sample Products Page]
 
 <br>
 
