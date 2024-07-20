@@ -860,9 +860,24 @@ class Comment(models.Model):
 # Rebuild docker
 docker-compose down
 docker-compose up --build
-# migrate
-docker-compose exec web python manage.py makemigrations
-docker-compose exec web python manage.py migrate
+
+
+# Add in products/admin.py
+from .models import Comment
+
+@admin.register(Comment)
+class ProductAdmin(admin.ModelAdmin):
+    list_display = ['product', 'author', 'body', 'stars', 'active']
+
+
+# Rebuild docker
+docker-compose down
+docker-compose up --build
+# Run this file in Steps
+# 01-Second Steps for another
+# Check
+http://0.0.0.0:8000/admin/products/comment/
+
 
 
 
