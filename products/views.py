@@ -1,5 +1,6 @@
 from django.views import generic
 from django.shortcuts import get_object_or_404
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 from .models import Product
 from .models import Comment
@@ -7,14 +8,15 @@ from .forms import CommentForm
 
 
 # CBV is stand for -> Class-based View
-class ProductsListView(generic.ListView): 
+
+class ProductsListView(LoginRequiredMixin, generic.ListView): 
     # model = Product
     queryset = Product.objects.filter(active=True)
     template_name = 'products/products_list.html'
     context_object_name = 'products'
 
 
-class ProductDetailView(generic.DetailView):
+class ProductDetailView(LoginRequiredMixin, generic.DetailView):
     model = Product
     template_name = 'products/product_detail.html'
     context_object_name = 'product'
@@ -26,7 +28,7 @@ class ProductDetailView(generic.DetailView):
 
 
 
-class CommentCreateView(generic.CreateView):
+class CommentCreateView(LoginRequiredMixin, generic.CreateView):
     model = Comment
     form_class = CommentForm
 
