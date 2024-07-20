@@ -914,4 +914,35 @@ http://0.0.0.0:8000/products/1/
 
 
 
+# Add in products/urls.py
+from .views import CommentCreateView
+urlpatterns = [
+    ...
+    ...
+    path('comment/<int:product_id>/',CommentCreateView.as_view(), name='comment_create'),
+]
+
+
+# Add in products/views.py
+from django.shortcuts import get_object_or_404
+
+from .models import Comment
+
+class CommentCreateView(generic.CreateView):
+    model = Comment
+    form = CommentForm
+
+    def form_valid(self, form):
+        obj = form.save(commit=False)
+        obj.author = self.request.user
+
+        product_id = int(self.kwargs['product_id'])
+        product = get_object_or_404(Product, id=product_id)
+        obj.product = product
+
+        return super().form_valid(form)
+
+
+
+
 
