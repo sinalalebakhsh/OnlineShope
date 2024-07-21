@@ -25,7 +25,7 @@ class Product(models.Model):
 class ActiveCommentsManager():
     def get_queryset(self):
         return super(ActiveCommentsManager, self).get_queryset().filter(active=True)
-        
+
 
 
 class Comment(models.Model):
@@ -46,6 +46,8 @@ class Comment(models.Model):
 
     active = models.BooleanField(default=True)
     
+    # Manager
+    objects = models.Manager()
     def get_absolute_url(self):
         return reverse('product_detail', args=[self.product.id])
 
