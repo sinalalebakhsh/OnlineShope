@@ -29,6 +29,6 @@
 
 ## Product page
 
-<img src="./static/img/Screenshot from 2024-07-21 04-23-52.png" alt="" style="width:500px;"> 
+<img src="./static/img/Screenshot from 2024-07-21 04-23-52.png" alt="product page" style=" width:900px;"> 
 
 
