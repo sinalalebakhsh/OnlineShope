@@ -25,6 +25,10 @@
 [Sample Products Page]:http://154.16.16.239:8000/products/
 
 
- <img src="./static/img/Screenshot from 2024-07-21 04-23-52.png" alt="" style="width:500px;"> 
+<br>
+
+## Product page
+
+<img src="./static/img/Screenshot from 2024-07-21 04-23-52.png" alt="" style="width:500px;"> 
 
 
