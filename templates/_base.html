@@ -1,17 +1,18 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    
+
     <title>
         {% block page_title %}{% endblock %}
     </title>
-    
+
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <!-- Favicons -->
     <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
     <link rel="apple-touch-icon" href="{% static 'img/icon.png' %}">
@@ -25,13 +26,14 @@
 
     <!-- style css -->
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
-     
-</head>
-<body dir="rtl">
-    
 
-     <!-- Header Start -->
-     <header class="header">
+</head>
+
+<body dir="rtl">
+
+
+    <!-- Header Start -->
+    <header class="header">
         <div class="header-inner fixed-header">
             <div class="container">
                 <div class="row align-items-center">
@@ -40,7 +42,8 @@
                             <div class="site-branding" style="margin-right: 30px;">
                                 <a href="{% url 'home' %}" class="logo">
                                     <figure class="logo--normal d-none d-sm-block">
-                                        <img class="px-5" src="{% static 'img/SINA-min.jpg' %}" style="max-height: 50px; margin-bottom: -15px;" alt="Logo">
+                                        <img class="px-5" src="{% static 'img/SINA-min.jpg' %}"
+                                            style="max-height: 50px; margin-bottom: -15px;" alt="Logo">
                                     </figure>
                                 </a>
                             </div>
@@ -60,7 +63,7 @@
                                         <a href="{% url 'about' %}" class="mainmenu__link">
                                             <span class="mm-text">درباره</span>
                                         </a>
-                                     </li>
+                                    </li>
                                 </ul>
                             </div>
                         </nav>
@@ -84,20 +87,12 @@
                                 </a>
                                 <ul class="user-info-menu">
                                     {% if user.is_authenticated %}
-                                        <li>
-                                            <a class="text-right" href="#">حساب کاربری</a>
-                                        </li>
-                                        <li>
-                                            <a class="text-right" href="{% url 'account_logout'%}">خروج</a>
-                                        </li>
-                                    {% else %}
-                                        <li>
-                                            <a class="text-right" href="{% url 'account_signup' %}">ثبت‌نام</a>
-                                        </li>
-                                        <li>
-                                            <a class="text-right" href="{% url 'account_login' %}">ورود</a>
-                                        </li>
-                                    {% endif %}
+                                    <li>
+                                        <a class="text-right" href="#">حساب کاربری</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-right" href="{% url 'account_logout'%}">خروج</a>
+                                    </li>
                                     <li>
                                         <a class="text-right" href="cart.html">سبد خرید</a>
                                     </li>
@@ -107,6 +102,14 @@
                                     <li>
                                         <a class="text-right" href="order-tracking.html">تاریخچه سفارشات</a>
                                     </li>
+                                    {% else %}
+                                    <li>
+                                        <a class="text-right" href="{% url 'account_signup' %}">ثبت‌نام</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-right" href="{% url 'account_login' %}">ورود</a>
+                                    </li>
+                                    {% endif %}
                                 </ul>
                             </li>
                             <li class="header-toolbar__item">
@@ -131,15 +134,16 @@
     {% block content %}{% endblock %}
 
 
-       <!-- Footer Start-->
-       <footer class="footer">
+    <!-- Footer Start-->
+    <footer class="footer">
         <div class="footer-top bg-color ptb--50" data-bg-color="#f6f6f6">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-9 text-center">
                         <div class="footer-widget mb--50">
                             <div class="textwidget">
-                                <img class="px-5" src="{% static 'img/SINA-min.jpg' %}" style="max-height: 50px; margin-bottom: -15px;" alt="Logo">
+                                <img class="px-5" src="{% static 'img/SINA-min.jpg' %}"
+                                    style="max-height: 50px; margin-bottom: -15px;" alt="Logo">
                             </div>
                         </div>
                         <div class="footer-widget mb--50 pb--1">
@@ -171,4 +175,5 @@
 
 
 </body>
+
 </html>

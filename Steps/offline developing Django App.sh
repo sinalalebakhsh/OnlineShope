@@ -1057,8 +1057,10 @@ USE_L10N = True # Localization
 ...
 
 
-
-
+# Write In Terminal
+cd products/
+mkdir locale
+django-admin makemessages -l fa
 
 
 
