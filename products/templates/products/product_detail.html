@@ -1,5 +1,9 @@
 {% extends '_base.html' %}
+
 {% load static %}
+
+{% load comment_tags %}
+
 {% load crispy_forms_tags %}
 {% block page_title %}
 Product Detail
@@ -126,7 +130,7 @@ Product Detail
                                     <div class="product-reviews">
                                         <h3 class="review__title">{{ product.comments.count }} نظر برای {{ product.title }}</h3>
                                         <ul class="review__list">
-                                            {% for comment in product.comments.all %}
+                                            {% for comment in product.comments.all|only_active_comments %}
                                             <li class="review__item">
                                                 <div class="review__container">
                                                     <div class="review__text">
