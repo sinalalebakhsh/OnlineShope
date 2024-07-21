@@ -1,13 +1,67 @@
 {% extends "_base.html" %}
 {% load crispy_forms_tags %}
+{% load i18n %}
 {% block page_title %}
-    Signup
+Signup
 {% endblock %}
 {% block content %}
-    <h1>Signup</h1>
-    <form action="" method="POST">
-        {% csrf_token %}
-        {{ form|crispy }}
-        <input type="submit" value="Signup">
-    </form>
+
+<!-- Main Wrapper Start -->
+<div class="wrapper">
+
+    <!-- Breadcrumb area Start -->
+    <div class="breadcrumb-area bg-color ptb--10" data-bg-color="#f6f6f6">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="page-title" align="center">Signup</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- Breadcrumb area End -->
+    
+    <!-- Main Content Wrapper Start -->
+
+    <div class="main-content-wrapper" >
+        <div class="page-content-inner pt--75 pb--80" >
+            <div class="container" >
+                <div class="row" >
+                    <div class="col-md-6 mb-sm--50" >
+                        <div class="signup-box" >
+                            <form action="" method="POST" align="center">
+                                {% csrf_token %}
+                                {{ form|crispy }}
+                                <input type="submit" value="Signup" class="btn-submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Content Wrapper Start -->
+
+
+    <!-- Search form Popup Start -->
+    <div class="searchform__popup" id="searchForm">
+        <a href="#" class="btn-close"><i class="flaticon flaticon-cross"></i></a>
+        <div class="searchform__body">
+            <p>Start typing and press Enter to search</p>
+            <form class="searchform">
+                <input type="text" name="popup-search" id="popup-search" class="searchform__input"
+                    placeholder="Search Entire Store...">
+                <button type="submit" class="searchform__submit"><i
+                        class="flaticon flaticon-magnifying-glass-icon"></i></button>
+            </form>
+        </div>
+    </div>
+    <!-- Search form Popup End -->
+
+
+</div>
+<!-- Main Wrapper End -->
+
+
 {% endblock %}
