@@ -1014,5 +1014,10 @@ def only_active_comments(comments):
 
 
 
+# Add in products/admin.py
+class CommentsInline(admin.TabularInline):
+    model = Comment
+    fields = ['author', 'body', 'stars', 'active']
+
 
 
