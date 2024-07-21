@@ -1,0 +1,32 @@
+{
+    "html.suggest.html5": true,
+    "window.titleBarStyle": "custom",
+    "files.autoSave": "afterDelay",
+    "explorer.confirmDragAndDrop": false,
+    "workbench.colorTheme": "Bearded Theme Vivid Black",
+    "editor.tokenColorCustomizations": {
+        "comments": "#ff00aa"
+      },
+    "workbench.colorCustomizations": {
+      "editor.selectionBackground": "#003aff",
+      "statusBar.background": "#7C21D7",
+      "titleBar.activeBackground": "#4b0076",
+      "titleBar.activeForeground":"#ffffff",
+      
+    },
+  "editor.mouseWheelZoom": true,
+  "explorer.confirmDelete": false,
+  "workbench.iconTheme": "bearded-icons",
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "editor.snippetSuggestions": "bottom",
+  "emmet.showSuggestionsAsSnippets": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.largeFileOptimizations": false,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "go.toolsManagement.autoUpdate": true,
+  "git.openRepositoryInParentFolders": "always",
+  "python.createEnvironment.trigger": "off",
+  
+}
+
