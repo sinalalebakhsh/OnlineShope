@@ -1,6 +1,7 @@
 {% extends '_base.html' %}
 
 {% load static %}
+{% load i18n %}
 
 {% load comment_tags %}
 
@@ -167,7 +168,7 @@ Product Detail
                                             <div class="row">
                                                 <div class="border-top py-5 w-100"></div>
                                                 <div class="col-lg-8 m-auto">
-                                                    <span class="reply-title pull-right">نظر خود را بنویسید</span>
+                                                    <span class="reply-title pull-right">{% translate %}</span>
                                                     <br>
                                                     <form action="{% url 'comment_create' product.id %}" method="POST">
                                                         {% csrf_token %}
