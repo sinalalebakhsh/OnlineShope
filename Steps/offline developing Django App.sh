@@ -1046,7 +1046,7 @@ USE_L10N = True # Localization
 # Add in product_detail.html
 {% load i18n %}
 # Cahnge in product_detail.html
-<span class="reply-title pull-right">{% translate %}</span>
+<span class="reply-title pull-right">{% translate 'Write your comment' %}</span>
 
 
 
