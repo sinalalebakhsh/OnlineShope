@@ -23,3 +23,9 @@
 
 [pdAdmin DataBase]:http://154.16.16.239:8080
 [Sample Products Page]:http://154.16.16.239:8000/products/
+
+
+ <img src="" alt="Girl in a jacket" style="float:center; width:500px;"> 
+
+
+ 
