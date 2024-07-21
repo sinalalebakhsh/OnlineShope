@@ -973,6 +973,7 @@ class Comment(models.Model):
     ...
     # Manager
     objects = models.Manager()
+    active_comments_manager = ActiveCommentsManager()
 
     # def get_absolute_url(self):
     #     return reverse('product_detail', args=[self.product.id])
