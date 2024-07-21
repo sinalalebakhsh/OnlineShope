@@ -1024,5 +1024,6 @@ class ProductAdmin(admin.ModelAdmin):
     inlines = [
         CommentsInline,
     ]
-
+# Check this link
+http://0.0.0.0:8000/admin/products/product/1/change/
 
