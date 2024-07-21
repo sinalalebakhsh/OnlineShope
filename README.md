@@ -25,6 +25,6 @@
 [Sample Products Page]:http://154.16.16.239:8000/products/
 
 
- <img src="https://github.com/sinalalebakhsh/OnlineShope/commit/f237ebbd9b0ee4823ac7418ad439b9edb8df0077#diff-d35772d2c0e01cc2118c205cbba96af7bfdfe2994aea64b640906b802373eb79" alt="" style="width:500px;"> 
+ <img src="./static/img/Screenshot from 2024-07-21 04-23-52.png" alt="" style="width:500px;"> 
 
 
