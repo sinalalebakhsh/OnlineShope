@@ -980,3 +980,13 @@ class Comment(models.Model):
 
 
 
+
+
+
+
+# CREATE this in products directory
+templatestags/__init__.py
+
+# CREATE in products/templatestags/
+comment_tags.py
+
