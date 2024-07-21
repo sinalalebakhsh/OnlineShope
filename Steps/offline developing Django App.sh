@@ -985,14 +985,14 @@ class Comment(models.Model):
 
 
 # CREATE this in products directory
-templatestags/__init__.py
+templatetags/__init__.py
 
 # CREATE in products/templatestags/
 comment_tags.py
 
 # Content in products/templatestags/comment_tags.py
-from django import templates
-register = templates.Library()
+from django import template
+register = template.Library()
 @register.filter
 def only_active_comments(comments):
     return comments.filter(active=True)

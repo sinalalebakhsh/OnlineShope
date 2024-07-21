@@ -1,15 +1,12 @@
-from django import templates
+from django import template
 
-register = templates.Library()
+register = template.Library()
 
 
 
 @register.filter
 def only_active_comments(comments):
     return comments.filter(active=True)
-
-
-
 
 
 
