@@ -1047,6 +1047,8 @@ USE_L10N = True # Localization
 {% load i18n %}
 # Cahnge in product_detail.html
 <span class="reply-title pull-right">{% translate 'Write your comment' %}</span>
+...
+<input type="submit" value="{% trans 'Submit' %}">
 
 
 
