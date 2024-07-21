@@ -1019,5 +1019,10 @@ class CommentsInline(admin.TabularInline):
     model = Comment
     fields = ['author', 'body', 'stars', 'active']
 
+class ProductAdmin(admin.ModelAdmin):
+    ...
+    inlines = [
+        CommentsInline,
+    ]
 
 
