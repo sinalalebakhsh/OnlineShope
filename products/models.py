@@ -22,7 +22,10 @@ class Product(models.Model):
 
 
 
-
+class ActiveCommentsManager():
+    def get_queryset(self):
+        return super(ActiveCommentsManager, self).get_queryset().filter(active=True)
+        
 
 
 class Comment(models.Model):
