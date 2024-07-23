@@ -25,6 +25,7 @@ docker pull nginx:latest
 
 docker pull dpage/pgadmin4
 
+docker pull python:3.8-slim
 
 docker pull mailhog/mailhog
 # OR

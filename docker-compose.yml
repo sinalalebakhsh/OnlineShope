@@ -3,7 +3,7 @@ version: '3.9'
 services:
   web:
     build: .
-    command: sh -c "pip --version && pip install --upgrade pip && python manage.py makemigrations && python manage.py migrate && python /code/manage.py runserver 0.0.0.0:8000"
+    command: sh -c "pip --version && pip install --upgrade pip && python manage.py makemigrations && python manage.py migrate && python /code/manage.py runserver 0.0.0.0:8000 --insecure"
     volumes:
       - .:/code
     ports:
@@ -31,18 +31,3 @@ services:
     ports:
       - "5432:5432"
 
-
-  # smtp-server:
-  #   image: mailhog/mailhog
-  #   expose:
-  #     - 1025
-  #     - 8025
-  #   ports:
-  #     - '1025:1025'
-  #     - '8025:8025'
-
-  # maildev:
-  #   image: maildev/maildev
-  #   ports:
-  #     - "1025:1025"  # SMTP server port
-  #     - "1080:1080"  # Web UI port
