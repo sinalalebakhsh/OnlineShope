@@ -11,6 +11,7 @@ crispy-bootstrap4 = "*"
 django-allauth = "*"
 django-environ = "*"
 psycopg2-binary = "*"
+django-rosetta = "*"
 
 [dev-packages]
 
