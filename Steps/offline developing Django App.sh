@@ -1120,5 +1120,17 @@ pipenv requirements > requirements.txt
 
 
 # Add thi in config/urls.py
+urlpatterns = [
+    ...
+    ...
+    ...
+    # Rosetta Package i18n
+    path('rosetta/', include('rosetta.urls')),
+]
+
+
+
+# Add in config/settings.py -> INSTALLED_APPS [..., here]
+
 
 

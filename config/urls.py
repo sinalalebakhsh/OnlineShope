@@ -26,4 +26,8 @@ urlpatterns = [
     path("home/", include("pages.urls")),
     path("accounts/", include("allauth.urls")),
     path("products/", include("products.urls")),
+
+
+    # Rosetta Package i18n
+    path('rosetta/', include('rosetta.urls')),
 ]
