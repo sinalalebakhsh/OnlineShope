@@ -1079,4 +1079,8 @@ msgstr "ارسال"
 
 
 
+# In Terminal in products directory
+django-admin compilemessages
+
+
 
