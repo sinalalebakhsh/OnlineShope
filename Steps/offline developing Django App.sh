@@ -1094,4 +1094,14 @@ class Comment(models.Model):
     stars = models.CharField(max_length=10, choices=PRODUCT_STARS, verbose_name=_("score"))
 
 
+cd products/
+django-admin makemessages -l fa
+
+# Translate in po file in products/locale/fa/LC_MESSAGES
+#: models.py:49
+msgid "text"
+msgstr "متن دیدگاه"
+#: models.py:50
+msgid "score"
+msgstr "امتیاز"
 
