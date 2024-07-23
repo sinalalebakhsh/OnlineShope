@@ -1131,6 +1131,15 @@ urlpatterns = [
 
 
 # Add in config/settings.py -> INSTALLED_APPS [..., here]
+INSTALLED_APPS = [
+    ...
+    ...
+    # Packages
+    "rosetta",
+    ...
+    ...
+]
+
 
 
 

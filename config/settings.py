@@ -44,11 +44,21 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    #
+    #
+    #-------------------------------------------------
     # Packages
     "crispy_forms",
     "crispy_bootstrap4",
     "allauth",
     "allauth.account",
+    "rosetta",
+    # 
+    # 
+    # 
+    # 
+    # 
+    #-------------------------------------------------
     # APPs
     "accounts.apps.AccountsConfig",
     "pages.apps.PagesConfig",
@@ -133,7 +143,7 @@ LANGUAGE_CODE = "fa"
 TIME_ZONE = "Asia/Tehran"
 
 USE_I18N = True
-USE_L10N = True # Localization
+USE_L10N = True  # Localization
 USE_TZ = True
 
 
