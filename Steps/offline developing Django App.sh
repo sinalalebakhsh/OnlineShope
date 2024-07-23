@@ -1116,7 +1116,7 @@ http://0.0.0.0:8000/products/1/
 pipenv install django-rosetta
 
 
-pipenv requirements > requi
+pipenv requirements > requirements.txt
 
 
 
