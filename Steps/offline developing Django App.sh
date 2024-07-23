@@ -1105,3 +1105,9 @@ msgstr "متن دیدگاه"
 msgid "score"
 msgstr "امتیاز"
 
+
+django-admin compilemessages
+# Check this link
+http://0.0.0.0:8000/products/1/
+
+
