@@ -1119,5 +1119,6 @@ pipenv install django-rosetta
 pipenv requirements > requirements.txt
 
 
+# Add thi in config/urls.py
 
 
