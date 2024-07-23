@@ -1,6 +1,9 @@
 {% extends '_base.html' %}
+
+{% load i18n %}
+
 {% block page_title %}
-HOME
+{% translate 'HOME' %}
 {% endblock %}
 {% block content %}
 
@@ -13,7 +16,7 @@ HOME
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="page-title" align="center">Home</h1>
+                    <h1 class="page-title" align="center">{% translate 'Home' %}</h1>
                 </div>
             </div>
         </div>

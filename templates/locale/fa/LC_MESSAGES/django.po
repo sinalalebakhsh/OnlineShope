@@ -1,0 +1,280 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-23 08:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+#: account/account_inactive.html:5 account/account_inactive.html:9
+msgid "Account Inactive"
+msgstr "اکانت غیرفعال"
+
+#: account/account_inactive.html:12
+msgid "This account is inactive."
+msgstr "این اکانت غیرقعال است"
+
+#: account/base_reauthenticate.html:5 account/base_reauthenticate.html:9
+msgid "Confirm Access"
+msgstr "دسترسی را تأیید کنید"
+
+#: account/base_reauthenticate.html:12
+msgid "Please reauthenticate to safeguard your account."
+msgstr "لطفاً برای محافظت از حساب خود دوباره احراز هویت کنید."
+
+#: account/base_reauthenticate.html:19
+msgid "Alternative options"
+msgstr "گزینه های جایگزین"
+
+#: account/confirm_login_code.html:5 account/confirm_login_code.html:27
+msgid "Sign In"
+msgstr "ورود"
+
+#: account/confirm_login_code.html:9
+msgid "Enter Sign-In Code"
+msgstr "رمز ورود را وارد کنید"
+
+#: account/confirm_login_code.html:15
+#, python-format
+msgid ""
+"We’ve sent a code to %(email_link)s. The code expires shortly, so please "
+"enter it soon."
+msgstr "ما یک کد برای ایمیل %(email_link) فرستادیم. کد به زودی منقضی می شود، بنابراین لطفاً زودتر تاییدش کنید."
+
+#: account/confirm_login_code.html:34
+msgid "Other sign-in options"
+msgstr "سایر گزینه های ورود به سیستم"
+
+#: account/email.html:4 account/email.html:8
+msgid "Email Addresses"
+msgstr "آدرس‌های ایمیل"
+
+#: account/email.html:12
+msgid "The following email addresses are associated with your account:"
+msgstr "آدرس‌های ایمیل زیر با حساب شما مرتبط هستند:"
+
+#: account/email.html:25
+msgid "Verified"
+msgstr "تایید شده"
+
+#: account/email.html:29
+msgid "Unverified"
+msgstr "تایید نشده"
+
+#: account/email.html:34
+msgid "Primary"
+msgstr "اولیه"
+
+#: account/email.html:44
+msgid "Make Primary"
+msgstr ""
+
+#: account/email.html:47 account/email_change.html:37
+msgid "Re-send Verification"
+msgstr "ارسال مجدد تاییدیه"
+
+#: account/email.html:50
+msgid "Remove"
+msgstr "حذف"
+
+#: account/email.html:59
+msgid "Add Email Address"
+msgstr ""
+
+#: account/email.html:70
+msgid "Add Email"
+msgstr "اضافه کردن ایمیل"
+
+#: account/email.html:79
+msgid "Do you really want to remove the selected email address?"
+msgstr "واقعا میخوای ایمیل های انتخاب شده رو حذف کنی؟"
+
+#: account/email/email_confirmation_message.txt:8
+#, python-format
+msgid ""
+"\n"
+"You're receiving this email because user %(user_display)s has given your "
+"email address to register an account on %(site_domain)s.\n"
+"\n"
+"To confirm this is correct, go to %(activate_url)s\n"
+msgstr "شما این ایمیل را دریافت می‌کنید زیرا کاربر %(user_display) شما را داده است آدرس ایمیل برای ثبت حساب در %(site_domain)s.\n برای تأیید صحت این مورد، به %(activate_url)s\n بروید"
+
+#: account/email_change.html:5 account/email_change.html:9
+msgid "Email Address"
+msgstr "آدرس ایمیل"
+
+#: account/email_change.html:21 account/email_change.html:29
+msgid "Current email"
+msgstr "ایمیل جاری"
+
+#: account/email_change.html:31
+msgid "Changing to"
+msgstr "در حال تغییر به."
+
+#: account/email_change.html:35
+msgid "Your email address is still pending verification."
+msgstr "آدرس ایمیل شما هنوز در انتظار تأیید است."
+
+#: account/email_change.html:41
+msgid "Cancel Change"
+msgstr "لغو تغییر"
+
+#: account/email_change.html:49
+msgid "Change to"
+msgstr "تغییر به"
+
+#: account/email_change.html:55
+msgid "Change Email"
+msgstr "تغییر ایمیل"
+
+#: account/email_confirm.html:6 account/email_confirm.html:10
+msgid "Confirm Email Address"
+msgstr "تایید آدرس ایمیل"
+
+#: account/email_confirm.html:16
+#, python-format
+msgid ""
+"Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an email "
+"address for user %(user_display)s."
+msgstr ""
+
+#: account/email_confirm.html:24
+msgid "Confirm"
+msgstr ""
+
+#: account/email_confirm.html:30
+#, python-format
+msgid ""
+"Unable to confirm %(email)s because it is already confirmed by a different "
+"account."
+msgstr ""
+
+#: account/email_confirm.html:36
+#, python-format
+msgid ""
+"This email confirmation link expired or is invalid. Please <a "
+"href=\"%(email_url)s\">issue a new email confirmation request</a>."
+msgstr ""
+
+#: account/logout.html:4 account/logout.html:8 account/logout.html:21
+msgid "Sign Out"
+msgstr "خروج"
+
+#: account/logout.html:11
+msgid "Are you sure you want to sign out?"
+msgstr "واقعا میخوای خارج بشی؟"
+
+#: account/password_change.html:4 account/password_change.html:9
+#: account/password_change.html:21 account/password_reset_from_key.html:6
+#: account/password_reset_from_key.html:15
+#: account/password_reset_from_key.html:33
+#: account/password_reset_from_key_done.html:5
+#: account/password_reset_from_key_done.html:9
+msgid "Change Password"
+msgstr "تغییر رمز ورود"
+
+#: account/password_change.html:23
+msgid "Forgot Password?"
+msgstr "رمز ورود رو فراموش کردی؟"
+
+#: account/password_reset.html:5 account/password_reset.html:9
+#: account/password_reset_done.html:6 account/password_reset_done.html:10
+msgid "Password Reset"
+msgstr "تغییر رمز ورود"
+
+#: account/password_reset.html:15
+msgid ""
+"Forgotten your password? Enter your email address below, and we'll send you "
+"an email allowing you to reset it."
+msgstr ""
+
+#: account/password_reset.html:26
+msgid "Reset My Password"
+msgstr ""
+
+#: account/password_reset.html:31
+msgid "Please contact us if you have any trouble resetting your password."
+msgstr ""
+
+#: account/password_reset_done.html:16
+msgid ""
+"We have sent you an email. If you have not received it please check your "
+"spam folder. Otherwise contact us if you do not receive it in a few minutes."
+msgstr ""
+
+#: account/password_reset_from_key.html:13
+msgid "Bad Token"
+msgstr "توکن درست نیست"
+
+#: account/password_reset_from_key.html:21
+#, python-format
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password reset</"
+"a>."
+msgstr ""
+
+#: account/password_reset_from_key_done.html:12
+msgid "Your password is now changed."
+msgstr ""
+
+#: account/password_set.html:5 account/password_set.html:9
+#: account/password_set.html:22
+msgid "Set Password"
+msgstr ""
+
+#: account/verification_sent.html:5 account/verification_sent.html:9
+#: account/verified_email_required.html:5
+#: account/verified_email_required.html:9
+msgid "Verify Your Email Address"
+msgstr "آدرس ایمیل را تایید کنید"
+
+#: account/verification_sent.html:12
+msgid ""
+"We have sent an email to you for verification. Follow the link provided to "
+"finalize the signup process. If you do not see the verification email in "
+"your main inbox, check your spam folder. Please contact us if you do not "
+"receive the verification email within a few minutes."
+msgstr ""
+
+#: account/verified_email_required.html:13
+msgid ""
+"This part of the site requires us to verify that\n"
+"you are who you claim to be. For this purpose, we require that you\n"
+"verify ownership of your email address. "
+msgstr ""
+
+#: account/verified_email_required.html:18
+msgid ""
+"We have sent an email to you for\n"
+"verification. Please click on the link inside that email. If you do not see "
+"the verification email in your main inbox, check your spam folder. "
+"Otherwise\n"
+"contact us if you do not receive it within a few minutes."
+msgstr ""
+
+#: account/verified_email_required.html:23
+#, python-format
+msgid ""
+"<strong>Note:</strong> you can still <a href=\"%(email_url)s\">change your "
+"email address</a>."
+msgstr ""
+
+#: home.html:6
+msgid "HOME"
+msgstr "خانه"
+
+#: home.html:19
+msgid "Home"
+msgstr "خانه"
