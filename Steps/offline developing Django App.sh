@@ -1091,4 +1091,7 @@ class Comment(models.Model):
     ...
     ...
     body = models.TextField(verbose_name=_("text"))
+    stars = models.CharField(max_length=10, choices=PRODUCT_STARS, verbose_name=_("score"))
+
+
 

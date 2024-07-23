@@ -47,7 +47,7 @@ class Comment(models.Model):
         related_name="comments",
     )
     body = models.TextField(verbose_name=_("text"))
-    stars = models.CharField(max_length=10, choices=PRODUCT_STARS, verbose_name="score")
+    stars = models.CharField(max_length=10, choices=PRODUCT_STARS, verbose_name=_("score"))
 
     datetime_created = models.DateTimeField(auto_now_add=True)
     dateTime_modified = models.DateTimeField(auto_now=True)
