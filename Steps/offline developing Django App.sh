@@ -1063,5 +1063,20 @@ mkdir locale
 django-admin makemessages -l fa
 
 
+# in products/locale/fa/LC_MESSAGES
+# translate things
+msgid "Add to Cart"
+msgstr "اضافه به سبد خرید"
+#: templates/products/product_detail.html:83
+msgid "Product Description"
+msgstr "اطلاعات محصول"
+#: templates/products/product_detail.html:171
+msgid "Write your comment"
+msgstr "نظر خود را بنویسید"
+#: templates/products/product_detail.html:176
+msgid "Submit"
+msgstr "ارسال"
+
+
 
 
