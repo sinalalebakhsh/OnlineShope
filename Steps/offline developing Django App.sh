@@ -1033,7 +1033,7 @@ http://0.0.0.0:8000/admin/products/product/1/change/
 
 # Change in config/settings.py
 # LANGUAGE_CODE = "en-us"
-LANGUAGE_CODE = "fa"
+LANGUAGE_CODE = "fa-ir"
 # TIME_ZONE = "UTC"
 TIME_ZONE = "Asia/Tehran"
 ...
@@ -1139,7 +1139,6 @@ INSTALLED_APPS = [
     ...
     ...
 ]
-
 
 
 

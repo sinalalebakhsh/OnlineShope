@@ -1,28 +1,21 @@
 # OnlineShope
 
 ## How run?
-
-    read all "Steps" directory
-
-
-
-
-[Django Project WebApp]
+### read all "Steps" directory
 
 <br>
 
-[pdAdmin DataBase] 
+[acronproject.com]
+
+[Django Project WebApp: acronproject.com]
 
 <br>
 
-[Sample Products Page]
 
-<br>
+[acronproject.com]: http://acronproject.com/
 
-[Django Project WebApp]: http://154.16.16.239:8000
+[Django Project WebApp: acronproject.com]: http://acronproject.com/
 
-[pdAdmin DataBase]:http://154.16.16.239:8080
-[Sample Products Page]:http://154.16.16.239:8000/products/
 
 
 <br>
