@@ -18,15 +18,11 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 
 docker pull python:3.10
-
 docker pull postgres:14
-
 docker pull nginx:latest
-
 docker pull dpage/pgadmin4
-
 docker pull python:3.8-slim
-
+# ==========================
 docker pull mailhog/mailhog
 # OR
 docker pull maildev/maildev
