@@ -1,0 +1,33 @@
+version: '3.9'
+
+services:
+  web:
+    build: .
+    command: sh -c "pip --version && pip install --upgrade pip && python manage.py makemigrations && python manage.py migrate && python /code/manage.py runserver 0.0.0.0:8000 --insecure"
+    volumes:
+      - .:/code
+    ports:
+      - 8000:8000
+    depends_on:
+      - db
+    env_file:
+      - .env
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+    env_file:
+      - .env
+
+  db:
+    image: postgres:14
+    environment:
+      - "POSTGRES_HOST_AUTH_METHOD=trust"
+    ports:
+      - "5432:5432"
+

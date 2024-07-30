@@ -12,6 +12,7 @@ django-allauth = "*"
 django-environ = "*"
 psycopg2-binary = "*"
 django-rosetta = "*"
+python-dotenv = "*"
 
 [dev-packages]
 

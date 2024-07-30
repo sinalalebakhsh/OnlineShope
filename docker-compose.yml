@@ -1,33 +1,50 @@
-version: '3.9'
+version: '3.8'
 
 services:
-  web:
-    build: .
-    command: sh -c "pip --version && pip install --upgrade pip && python manage.py makemigrations && python manage.py migrate && python /code/manage.py runserver 0.0.0.0:8000 --insecure"
+  db:
+    image: postgres:13
     volumes:
-      - .:/code
-    ports:
-      - 8000:8000
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
     depends_on:
       - db
-    env_file:
-      - .env
+    environment:
+      - DATABASE_URL=postgres://myuser:mypassword@db:5432/mydatabase
+    expose:
+      - "8000"
+
   pgadmin:
     image: dpage/pgadmin4
     environment:
       PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
       PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
     ports:
-      - "8080:80"
+      - "8081:80"
     depends_on:
       - db
     env_file:
       - .env
 
-  db:
-    image: postgres:14
-    environment:
-      - "POSTGRES_HOST_AUTH_METHOD=trust"
+  nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile.nginx
+    volumes:
+      - .:/app
     ports:
-      - "5432:5432"
+      - "8080:80"
+    depends_on:
+      - web
 
+volumes:
+  postgres_data:

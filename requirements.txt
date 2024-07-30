@@ -19,3 +19,4 @@ requests==2.32.3; python_version >= '3.8'
 sqlparse==0.5.1; python_version >= '3.8'
 typing-extensions==4.12.2; python_version < '3.11'
 urllib3==2.2.2; python_version >= '3.8'
+gunicorn

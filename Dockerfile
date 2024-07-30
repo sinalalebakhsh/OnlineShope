@@ -1,18 +1,21 @@
-# Use Python 3.10 image
-FROM python:3.10
+# Dockerfile
+# Use the official Python image from the Docker Hub
+FROM python:3.9-slim
 
-# Set environment variables
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
+# Set the working directory in the container
+WORKDIR /app
 
-# Set the working directory to /code
-WORKDIR /code
+# Copy the requirements file into the container
+COPY requirements.txt .
 
-# Copy the requirements.txt file into the container at /code
-COPY requirements.txt /code/
+# Install Python dependencies
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Install any dependencies specified in requirements.txt
-RUN pip install -r requirements.txt
+# Copy the current directory contents into the container at /app
+COPY . .
 
-# Copy all files in the current directory to /code
-COPY . /code/
+# Expose the port Gunicorn will run on
+EXPOSE 8000
+
+# Define the command to run the application
+CMD ["gunicorn", "config.wsgi:application", "--bind", "0.0.0.0:8000"]
