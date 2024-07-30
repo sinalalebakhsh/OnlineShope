@@ -1,8 +1,9 @@
 # OnlineShope
 
 ## How run?
-### read all "Steps" directory
-
+### read all "DevOps" directory
+    for production mode
+    
 <br>
 
 [acronproject.com]

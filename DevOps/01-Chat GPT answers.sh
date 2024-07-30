@@ -27,7 +27,8 @@ sudo systemctl enable nginx
     # Check the status to ensure Nginx is running:
 sudo systemctl status nginx
 
-
+sudo chown -R www-data:www-data /home/sina/django/OnlineShope/staticfiles
+sudo chmod -R 755 /home/sina/django/OnlineShope/staticfiles
 
 # Configure Nginx to Serve Your Domain:
 
