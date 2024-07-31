@@ -1146,14 +1146,14 @@ INSTALLED_APPS = [
 
 # Add in _base.html
 {% if messages %}
-    <ul class="messages">
-        {% for %}
-            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    <div class="container">
+        {% for message in messages %}
+            <div class="alert alert-{{ message.tags }}">
+                {{ message }}
+            </div>
         {% endfor %}
-    </ul>
+    </div>
 {% endif %}
-
-
 
 
 
