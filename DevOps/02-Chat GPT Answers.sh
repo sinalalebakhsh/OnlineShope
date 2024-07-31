@@ -1,12 +1,10 @@
+nano .env
+# COPY/PASTE data
+
+# in First SSH Terminal:
 docker-compose up --build
 
-
-
-docker-compose exec web python manage.py showmigrations
-docker-compose exec web python manage.py makemigrations
+# in Second SSH Terminal
 docker-compose exec web python manage.py migrate
-
-
-
 
 
