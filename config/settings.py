@@ -156,3 +156,11 @@ CSRF_TRUSTED_ORIGINS = [
     'http://www.acronproject.com',
     'http://www.acronproject.com:8080'
 ]
+
+
+from django.contrib.messages import constants as messages_constants
+# For messages framework
+MESSAGE_TAGS = {
+    messages_constants.ERROR: 'danger',
+}
+

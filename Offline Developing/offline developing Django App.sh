@@ -1158,5 +1158,16 @@ INSTALLED_APPS = [
 
 
 
+# Add in settings.py
+from django.contrib.messages import constants as messages_constants
+# For messages framework
+MESSAGE_TAGS = {
+    messages_constants.ERROR: 'danger',
+}
+
+
+
+
+
 
 
