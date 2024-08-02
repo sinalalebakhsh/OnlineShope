@@ -1169,5 +1169,13 @@ MESSAGE_TAGS = {
 
 
 
+# Add in accounts/views.py
+from django.contrib.messages.views import SuccessMessageMixin
+...
+class SignUpView(SuccessMessageMixin, CreateView):
+#                ....................
+    ...
+    ...
+    success_message = "%(name)s was created successfully"
 
 
