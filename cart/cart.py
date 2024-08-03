@@ -12,4 +12,6 @@ class Cart:
             self.session['cart'] = {}
             cart = self.session['cart']
 
+        self.cart = cart
+
 
