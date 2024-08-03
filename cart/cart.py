@@ -6,7 +6,10 @@ class Cart:
 
         self.session = request.session
 
-        self.session['cart'] = {}
+        cart = self.session.get('cart')
 
+        if not cart:
+            self.session['cart'] = {}
+            cart = self.session['cart']
 
 
