@@ -1179,3 +1179,14 @@ class SignUpView(SuccessMessageMixin, CreateView):
     success_message = "%(name)s was created successfully"
 
 
+
+
+
+
+
+# CREATE new app for cart
+docker-compose exec web python manage.py startapp cart
+
+
+
+

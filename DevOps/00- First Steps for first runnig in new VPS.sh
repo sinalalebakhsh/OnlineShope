@@ -21,6 +21,10 @@ docker pull python:3.10
 docker pull postgres:14
 docker pull nginx:latest
 docker pull dpage/pgadmin4
+docker pull python:3.9-slim
+docker pull nginx:alpine
+
+# Optional:
 docker pull python:3.8-slim
 # ==========================
 
