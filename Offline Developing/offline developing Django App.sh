@@ -1188,5 +1188,11 @@ class SignUpView(SuccessMessageMixin, CreateView):
 docker-compose exec web python manage.py startapp cart
 
 
-
+# Add in config/settings.py -> INSTALLED_APPS
+INSTALLED_APPS = [
+    ...
+    ...
+    ...
+    "cart",
+]
 

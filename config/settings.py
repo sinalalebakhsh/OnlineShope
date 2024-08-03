@@ -3,6 +3,7 @@ from environs import Env
 import os
 
 from dotenv import load_dotenv
+
 load_dotenv()
 
 # get .env if exists (for environments variables)
@@ -40,6 +41,7 @@ INSTALLED_APPS = [
     "accounts.apps.AccountsConfig",
     "pages.apps.PagesConfig",
     "products.apps.ProductsConfig",
+    "cart",
 ]
 
 MIDDLEWARE = [
@@ -76,12 +78,12 @@ WSGI_APPLICATION = "config.wsgi.application"
 # Database
 DATABASES = {
     "default": {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('POSTGRES_DB'),
-        'USER': os.getenv('POSTGRES_USER'),
-        'PASSWORD': os.getenv('POSTGRES_PASSWORD'),
-        'HOST': os.getenv('POSTGRES_HOST'),
-        'PORT': os.getenv('POSTGRES_PORT'),
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": os.getenv("POSTGRES_DB"),
+        "USER": os.getenv("POSTGRES_USER"),
+        "PASSWORD": os.getenv("POSTGRES_PASSWORD"),
+        "HOST": os.getenv("POSTGRES_HOST"),
+        "PORT": os.getenv("POSTGRES_PORT"),
     }
 }
 
@@ -104,9 +106,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 LANGUAGE_CODE = "fa-ir"
 LANGUAGES = (
-    ('en', 'English'),
-    ('de', 'German'),
-    ('fa', 'Persian'),
+    ("en", "English"),
+    ("de", "German"),
+    ("fa", "Persian"),
 )
 
 TIME_ZONE = "Asia/Tehran"
@@ -119,7 +121,7 @@ STATIC_URL = "/static/"
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
@@ -149,18 +151,17 @@ ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
 
 
-
 CSRF_TRUSTED_ORIGINS = [
-    'http://localhost:8080',
-    'http://127.0.0.1:8080',
-    'http://www.acronproject.com',
-    'http://www.acronproject.com:8080'
+    "http://localhost:8080",
+    "http://127.0.0.1:8080",
+    "http://www.acronproject.com",
+    "http://www.acronproject.com:8080",
 ]
 
 
 from django.contrib.messages import constants as messages_constants
+
 # For messages framework
 MESSAGE_TAGS = {
-    messages_constants.ERROR: 'danger',
+    messages_constants.ERROR: "danger",
 }
-
