@@ -1193,6 +1193,18 @@ INSTALLED_APPS = [
     ...
     ...
     ...
-    "cart",
+    "cart.apps.CartConfig",
 ]
+
+
+
+
+
+
+
+
+
+
+
+
 
