@@ -71,7 +71,7 @@
                     <div class="col-xl-3 col-lg-4 col-sm-7 col-12 p-0">
                         <ul class="header-toolbar">
                             <li class="header-toolbar__item">
-                                <a href="wishlist.html" class="header-toolbar__btn mx-4">
+                                <a href="#" class="header-toolbar__btn mx-4">
                                     <i class="flaticon flaticon-like"></i>
                                 </a>
                             </li>
@@ -82,7 +82,7 @@
                                 </a>
                             </li>
                             <li class="header-toolbar__item user-info">
-                                <a href="my-account.html" class="header-toolbar__btn">
+                                <a href="#" class="header-toolbar__btn">
                                     <i class="flaticon flaticon-user"></i>
                                 </a>
                                 <ul class="user-info-menu">
@@ -91,13 +91,13 @@
                                         <a class="text-right" href="#">حساب کاربری</a>
                                     </li>
                                     <li>
-                                        <a class="text-right" href="cart.html">سبد خرید</a>
+                                        <a class="text-right" href="#">سبد خرید</a>
                                     </li>
                                     <li>
-                                        <a class="text-right" href="wishlist.html">علاقه مندی ها</a>
+                                        <a class="text-right" href="#">علاقه مندی ها</a>
                                     </li>
                                     <li>
-                                        <a class="text-right" href="order-tracking.html">تاریخچه سفارشات</a>
+                                        <a class="text-right" href="#">تاریخچه سفارشات</a>
                                     </li>
                                     <li>
                                         <a class="text-right" href="{% url 'account_logout'%}">خروج</a>
@@ -141,9 +141,9 @@
     {% endif %}
 
 
-    {% block content %}{% endblock %}
-
-
+    {% block content %}
+    {% endblock %}
+    
     <!-- Footer Start-->
     <footer class="footer">
         <div class="footer-top bg-color ptb--50" data-bg-color="#f6f6f6">
