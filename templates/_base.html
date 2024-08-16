@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
 
     <title>
-        {% block page_title %}{% endblock %}
+        acronpro| {% block page_title %}{% endblock %}
     </title>
 
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -50,16 +50,16 @@
                             <div class="mainmenu-nav d-none d-lg-block w-100 pr-3">
                                 <ul class="mainmenu d-lg-flex jusity-content-end jusity-content-lg-start pt-4">
                                     <li class="mainmenu__item menu-item-has-children active">
-                                        <a href="{% url 'home' %}" class="mainmenu__link">
+                                        <a href="{% url 'home' %}" class="mainmenu__link" target="_blank">
                                             <span class="mm-text">خانه</span>
                                         </a>
                                     </li>
                                     <li class="mainmenu__item menu-item-has-children">
-                                        <a href="{% url 'product_list' %}" class="mainmenu__link">
+                                        <a href="{% url 'product_list' %}" class="mainmenu__link" target="_blank">
                                             <span class="mm-text">کتاب</span>
                                         </a>
                                     </li>
-                                    <li class="mainmenu__item menu-item-has-children">
+                                    <li class="mainmenu__item menu-item-has-children" target="_blank">
                                         <a href="{% url 'about' %}" class="mainmenu__link">
                                             <span class="mm-text">درباره</span>
                                         </a>
@@ -91,23 +91,23 @@
                                         <a class="text-right" href="#">حساب کاربری</a>
                                     </li>
                                     <li>
-                                        <a class="text-right" href="#">سبد خرید</a>
+                                        <a class="text-right" href="#" target="_blank">سبد خرید</a>
                                     </li>
                                     <li>
-                                        <a class="text-right" href="#">علاقه مندی ها</a>
+                                        <a class="text-right" href="#" target="_blank">علاقه مندی ها</a>
                                     </li>
                                     <li>
-                                        <a class="text-right" href="#">تاریخچه سفارشات</a>
+                                        <a class="text-right" href="#" target="_blank">تاریخچه سفارشات</a>
                                     </li>
                                     <li>
                                         <a class="text-right" href="{% url 'account_logout'%}">خروج</a>
                                     </li>
                                     {% else %}
                                     <li>
-                                        <a class="text-right" href="{% url 'account_signup' %}">ثبت‌نام</a>
+                                        <a class="text-right" href="{% url 'account_signup' %}" target="_blank">ثبت‌نام</a>
                                     </li>
                                     <li>
-                                        <a class="text-right" href="{% url 'account_login' %}">ورود</a>
+                                        <a class="text-right" href="{% url 'account_login' %}" target="_blank">ورود</a>
                                     </li>
                                     {% endif %}
                                 </ul>
@@ -131,19 +131,19 @@
     <!-- Header End -->
 
     {% if messages %}
-        <div class="container">
-            {% for message in messages %}
-                <div class="alert alert-{{ message.tags }}">
-                    {{ message }}
-                </div>
-            {% endfor %}
+    <div class="container">
+        {% for message in messages %}
+        <div class="alert alert-{{ message.tags }}">
+            {{ message }}
         </div>
+        {% endfor %}
+    </div>
     {% endif %}
 
 
     {% block content %}
     {% endblock %}
-    
+
     <!-- Footer Start-->
     <footer class="footer">
         <div class="footer-top bg-color ptb--50" data-bg-color="#f6f6f6">
@@ -152,8 +152,14 @@
                     <div class="col-lg-9 text-center">
                         <div class="footer-widget mb--50">
                             <div class="textwidget">
-                                <img class="px-5" src="{% static 'img/SINA-min.jpg' %}"
-                                    style="max-height: 50px; margin-bottom: -15px;" alt="Logo">
+                                <a href="{% url 'about' %}">
+                                    <img class="px-5" src="{% static 'img/SINA-min.jpg' %}"
+                                        style="max-height: 50px; margin-bottom: -15px;" alt="Logo">
+                                </a>
+                                <a href="{% url 'home' %}">
+                                    <img class="px-5" src="{% static 'img/favicon.ico' %}"
+                                        style="max-height: 50px; margin-bottom: -15px;" alt="Logo">
+                                </a>
                             </div>
                         </div>
                         <div class="footer-widget mb--50 pb--1">
