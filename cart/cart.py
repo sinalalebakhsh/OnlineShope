@@ -19,9 +19,14 @@ class Cart:
 
         if product_id not in self.cart:
             self.cart[product_id] = {'quantity': quantity}
+        else:
+            self.cart[product_id]['quantity'] += quantity
+
+    def save(self):
+        self.session.modified = True
+        
 
 
-            
 
 
 
