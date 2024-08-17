@@ -14,3 +14,10 @@ class Cart:
         self.cart = cart
 
 
+    def add(self, product, quantity=1):
+        product_id = str(product.id)
+
+        
+
+
+
