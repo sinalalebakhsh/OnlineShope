@@ -9,8 +9,7 @@ class Cart:
         cart = self.session.get('cart')
 
         if not cart:
-            self.session['cart'] = {}
-            cart = self.session['cart']
+            cart = self.session['cart'] = {}
 
         self.cart = cart
 
