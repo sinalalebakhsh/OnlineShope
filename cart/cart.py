@@ -71,6 +71,14 @@ class Cart:
         del self.session['cart']
         self.save()
 
+    
+    def get_total_price(self):
+        product_ids = self.cart.keys()
+        products = Product.objects.filter(id__in=product_ids)
+
+        return sum(Product.price for product in products)
+
+
 
 
 
