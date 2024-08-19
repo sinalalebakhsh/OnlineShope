@@ -32,7 +32,11 @@ class Cart:
         self.save()
 
 
-    
+    def remove(self, product):
+        """
+        Remove a product from the cart
+        """
+        product_id = str(product.id)
 
 
     def save(self):
