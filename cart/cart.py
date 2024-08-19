@@ -27,8 +27,6 @@ class Cart:
             self.cart[product_id] = {'quantity': quantity}
         else:
             self.cart[product_id]['quantity'] += quantity
-
-
         self.save()
 
 
@@ -40,7 +38,7 @@ class Cart:
 
         if product_id in self.cart:
             del self.cart[product_id]
-
+            self.save()
 
     def save(self):
         """
