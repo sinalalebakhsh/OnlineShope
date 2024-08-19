@@ -2,6 +2,9 @@
 
 class Cart:
     def __init__(self, request):
+        """
+        Initialize the cart
+        """
         self.request = request
 
         self.session = request.session
@@ -15,6 +18,9 @@ class Cart:
 
 
     def add(self, product, quantity=1):
+        """
+        Add the specified product to the cart if it exists.
+        """
         product_id = str(product.id)
 
         if product_id not in self.cart:
@@ -26,7 +32,13 @@ class Cart:
         self.save()
 
 
+    
+
+
     def save(self):
+        """
+        Mark session as modified to save changes
+        """
         self.session.modified = True
             
 
