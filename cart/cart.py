@@ -62,6 +62,11 @@ class Cart:
             yield item
 
 
+    def __len__(self):
+        return len(self.cart.keys())
+
+    
+
 
 
 
