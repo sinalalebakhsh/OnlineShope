@@ -1,6 +1,7 @@
 from pathlib import Path
 from environs import Env
 import os
+import dj_database_url
 
 from dotenv import load_dotenv
 
@@ -11,19 +12,19 @@ env = Env()
 env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env.str("DJANGO_SECRET_KEY")
+SECRET_KEY = "SAMPLE"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env.bool("DJANGO_DEBUG")
+DEBUG = SAMPLE
 
 # Allowed hosts
-ALLOWED_HOSTS = env.list("DJANGO_ALLOWED_HOSTS", default=["0.0.0.0"])
+ALLOWED_HOSTS = ["SAMPLE"]
 
 # Application definition
 INSTALLED_APPS = [
@@ -57,10 +58,12 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = "config.urls"
 
+
+BASE_DIR_2 = Path(__file__).resolve().parent.parent
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [str(BASE_DIR.joinpath("templates"))],
+        "DIRS": [str(BASE_DIR_2.joinpath("templates"))],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -76,16 +79,7 @@ TEMPLATES = [
 WSGI_APPLICATION = "config.wsgi.application"
 
 # Database
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.getenv("POSTGRES_DB"),
-        "USER": os.getenv("POSTGRES_USER"),
-        "PASSWORD": os.getenv("POSTGRES_PASSWORD"),
-        "HOST": os.getenv("POSTGRES_HOST"),
-        "PORT": os.getenv("POSTGRES_PORT"),
-    }
-}
+DATABASES = {"default": dj_database_url.config(default=os.environ.get("DATABASE_URL"))}
 
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [
@@ -141,21 +135,25 @@ AUTHENTICATION_BACKENDS = [
 
 SITE_ID = 1
 
-EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+EMAIL_BACKEND="django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST="SAMPLE"
+DEFAULT_FROM_EMAIL="SAMPLE"
+EMAIL_PORT=SAMPLE
+EMAIL_HOST_USER="SAMPLE"
+EMAIL_HOST_PASSWORD="SAMPLE"
+EMAIL_USE_TLS=SAMPLE
 
-ACCOUNT_SESSION_REMEMBER = True
-ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = False
-ACCOUNT_USERNAME_REQUIRED = False
-ACCOUNT_AUTHENTICATION_METHOD = "email"
-ACCOUNT_EMAIL_REQUIRED = True
-ACCOUNT_UNIQUE_EMAIL = True
-
+ACCOUNT_SESSION_REMEMBER = SAMPLE
+ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = SAMPLE
+ACCOUNT_USERNAME_REQUIRED = SAMPLE
+ACCOUNT_AUTHENTICATION_METHOD = "SAMPLE"
+ACCOUNT_EMAIL_REQUIRED = SAMPLE
+ACCOUNT_UNIQUE_EMAIL = SAMPLE
+SAMPLE
 
 CSRF_TRUSTED_ORIGINS = [
-    "http://localhost:8080",
-    "http://127.0.0.1:8080",
     "http://www.acronproject.com",
-    "http://www.acronproject.com:8080",
+    "https://www.acronproject.com",
 ]
 
 

@@ -25,6 +25,7 @@ sqlparse = "==0.5.1"
 typing-extensions = "==4.12.2"
 urllib3 = "==2.2.2"
 gunicorn = "*"
+dj-database-url = "*"
 
 [dev-packages]
 
